@@ -1,0 +1,110 @@
+<!-- Comentarios: Texto que el compilador no tiene en cuenta: ctrl + k +c -->
+<!-- <html lang="es"></html>
+        html: Nombre de la etiqueta
+        lang: Atributo
+        es: Valor del atributo -->
+
+
+<!DOCTYPE html>    <!-- Etiqueta que establece que el documento es HTML --> 
+<html lang="es">    <!-- Lenguaje de la pagina -->
+<head>      <!-- Etiqueta que contiene la info y config de la pag. web -->
+    <meta charset="UTF-8">      <!-- Codificacion de los caracteres especiales-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!-- Correcta visualizacion en dispositivos moviles-->
+    <meta name="description" content="Web donde tomar apuntes"> <!-- Descripcion de la web-->
+    <meta name="author" content="Daniel"> <!-- Autor de la página -->
+    <meta name="keywords" content="grup cief, curso ifcd0110, confeccion web, HTML5, CSS3, JavaScript"> <!-- Tags -->
+    <title>notas</title>    <!-- Titulo de la pagina -->
+    <style>
+        ul{list-style-type: none;}  /*Suprime los puntos en la lista  desordenada*/
+    </style>
+</head>
+
+<body>
+    <!-- Etiqueta para la parte visual de todos los elementos de la web-->
+    <!-- Los elementos HTML por defecto se posicionan en bloque o en linea -->
+    <!-- Etiquetas de encabezados-->
+    <h1>Titulo h1 - La mayor importancia</h1>
+    <h2>Titulo h2 - Un poco de importancia</h2>
+    <h3>Titulo h3 - Importancia medio alta</h3>
+    <h4>Titulo h4 - Importancia medio baja</h4>
+    <h5>Titulo h5 - Menos importancia</h5>
+    <h6>Titulo h6 - La menor importancia</h6>
+    
+    <h2>Imagenes</h2>
+    <img src="../Images/cief.png" alt="imagen cief" style="width:128px"> <!-- src indica la fuente de la imagen. alt indica que hubo un error en la imagen, style indica el tamaño en pantalla con width y height-->
+
+    <h2>Párrafos</h2>
+    <p> <!-- Párrafo-->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste illum aspernatur maxime alias praesentium ducimus optio labore possimus distinctio tenetur expedita consequatur, voluptate ab! Ratione odio facere dicta quis?
+    </p>
+    <p> <!-- Etiqueta <br> marca un salto de línea -->
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia corporis aperiam eveniet omnis eligendi delectus illum molestiae earum iste fugit perferendis, repellat magnam quae obcaecati neque ea laboriosam aliquam quaerat. Accusantium, dolorem dolore obcaecati, nemo doloremque officiis fugiat adipisci ducimus, repellendus ut quas molestiae iure inventore excepturi consequuntur? <br> Rerum, minima animi. Reiciendis explicabo laudantium facilis at voluptatum beatae sunt cupiditate soluta? Adipisci est ex temporibus deserunt et, inventore expedita, tempore cupiditate hic maxime iusto quibusdam perspiciatis incidunt, tenetur quam. <br> Fugiat praesentium eveniet, maiores atque expedita voluptates dolorum impedit officiis pariatur veniam consequuntur mollitia dolores aut optio, aperiam, provident dicta deleniti!
+    </p>
+
+    <h2>Links</h2>
+    <a href="https://google.es">Google</a> <!-- Etiqueta de link, href indica el link -->
+    <a href="https://google.es" target="_blank">Google en otra pestaña</a> <!-- target="_blank" indica que se abre en otra pestaña -->
+    <a href="../Scripts/main.html" target="_blank">Pagina 1</a> <!-- Tambien se puede insertar una página para abrirla al hacer click -->
+
+    <h2>Listas</h2>
+    <h4>Listas desordenadas</h4>
+    <ul> <!-- Lista por puntos -->
+        <li>Lista 1</li>
+        <li>Lista 2</li>
+        <li>Lista 3</li>
+        <li>Lista 4</li>
+    </ul>
+    <h4>Lista ordenadas</h4> 
+    <ol> <!-- Lista por numeros -->
+        <li>Lista 1</li>
+        <li>Lista 2</li>
+        <li>Lista 3</li>
+        <li>Lista 4</li>
+    </ol>
+    <h2>Imagenes</h2>
+    <ol>
+        <a href="./page1.html" target="_blank">  <!-- Imagen con link -->
+            <img src="../Images/cief.png" style="width:128px">
+        </a>
+        <a href="./page1.html" target="_blank">
+            <img src="../Images/cief2.jpg" style="width:128px">
+        </a>
+    </ol>
+
+    <h2>Elementos en bloque</h2>
+    <div>Cajas</div>   <!-- Elemento contenedor para posicionar mas facilemente elementos en su interior -->
+    <pre>mantiene
+            los
+                espacios
+    </pre>
+    <h4>Titulos</h4>
+    <p>Párrafos</p>
+    <aside>Contenido lateral</aside>
+    <article>Artículo</article>
+    <address>Calle falsa 123</address> <!-- Para indicar la direccion. Importante ponerlo para el SEO-->
+
+    <h2>Elementos en linea</h2>
+    <span>Texto en linea,</span> <!-- Contenido etiquetado para modificar individualmnte en CSS -->
+    <dfn>Contenido de definicion,</dfn>
+    <cite>Citar,</cite>
+    Imagenes,
+    <kbd>Shift+Alt+A,</kbd> <!-- Atajos de teclado -->
+    <kbd>Ctrl+K+C,</kbd>
+    <abbr title="Esto es un abbr">Pon el cursor encima,</abbr> <!-- Al pasar el cursos en este texto aparece un recuadro con texto -->
+    <input type="text"> <!-- crea un recuadro para completar -->
+    <input type="number">
+    <bdo dir="ltr">Texto al derecho,</bdo>
+    <bdo dir="rtl">,Texto del revés</bdo>
+    <del>Texto tachado,</del>
+    <mark>Texto subrayado,</mark>
+
+    <h2>Etiquetas de texto</h2>
+    <p>Lorem ipsum dolor sit amet <i>consectetur</i> <!-- cursiva --> adipisicing elit. <em>Perferendis</em> <!-- énfasis --> corporis optio, aut quod ea magni odio maxime. Ut, numquam eligendi, culpa <b>laudantium</b> <!-- negrita --> mollitia sed magnam laborum deleniti expedita porro <u>temporibus</u> <!-- subrayado -->.</p>
+
+    <h2>Etiquetas font</h2>
+    <font face="Arial">Hola</font>
+    <font face="Courier">Adios</font>
+    <font size="5">Texto con tamaño 5</font>
+
+</body>
+</html>
