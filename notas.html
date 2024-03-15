@@ -54,6 +54,7 @@
         <li>Lista 3</li>
         <li>Lista 4</li>
     </ul>
+
     <h4>Lista ordenadas</h4> 
     <ol> <!-- Lista por numeros -->
         <li>Lista 1</li>
@@ -63,14 +64,23 @@
     </ol>
 
     <h2>Imagenes</h2>
-    <ol>
-        <a href="./page1.html" target="_blank">  <!-- Imagen con link -->
-            <img src="../Images/cief.png" style="width:128px">
-        </a>
-        <a href="./page1.html" target="_blank">
-            <img src="../Images/cief2.jpg" style="width:128px">
-        </a>
-    </ol>
+    <a href="./page1.html" target="_blank">  <!-- Imagen con link -->
+        <img src="../Images/cief.png" style="width:128px">
+    </a>
+    <a href="./page1.html" target="_blank">
+        <img src="../Images/cief2.jpg" style="width:128px">
+    </a><br>
+
+    <img src="Images/Cat_on_its_back.jpg" style="width: 128px; border: 10px black solid;" alt="gato tumbado">
+    <!-- atributo border: tamaño en pixeles, color y tipo-->
+
+    <h2>Marcos</h2>
+    <!-- Compartir -> incrustar/insertar -->
+    Marco de mapa <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.7844654029495!2d2.1803808!3d41.4221972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bd2b6942f75f%3A0x37e5909cd9205c72!2sGrupo%20CIEF!5e0!3m2!1ses!2ses!4v1710499057212!5m2!1ses!2ses" width="300" height="225" style="border:10;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <br>
+
+    Marco de video <br>
+    <iframe width="300" height="225" src="https://www.youtube.com/embed/MJkdaVFHrto?si=v5ZBpCVdHHabUABb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <h2>Elementos en bloque</h2>
     <div>Cajas</div>   <!-- Elemento contenedor para posicionar mas facilemente elementos en su interior -->
@@ -81,26 +91,29 @@
     <h4>Titulos</h4>
     <p>Párrafos</p>
     <aside>Contenido lateral</aside>
-    <article>Artículo</article>
-    <address>Calle falsa 123</address> <!-- Para indicar la direccion. Importante ponerlo para el SEO-->
+    <article>Artículos</article>
+    <address>Direcciones</address> <!-- Para indicar la direccion. Importante ponerlo para el SEO-->
 
     <h2>Elementos en linea</h2>
-    <span>Texto en linea,</span> <!-- Contenido etiquetado para modificar individualmnte en CSS -->
+    <span>Span,</span> <!-- Contenido etiquetado para modificar individualmnte en CSS -->
     <dfn>Contenido de definicion,</dfn>
     <cite>Citar,</cite>
-    Imagenes,
+    Imagenes, Iframe
     <kbd>Shift+Alt+A,</kbd> <!-- Atajos de teclado -->
     <kbd>Ctrl+K+C,</kbd>
-    <abbr title="Esto es un abbr">Pon el cursor encima,</abbr> <!-- Al pasar el cursos en este texto aparece un recuadro con texto -->
+    <abbr title="Esto es un abbr">Pon el cursor encima,</abbr> <!-- Al pasar el cursor en este texto aparece un recuadro con texto -->
     <input type="text"> <!-- crea un recuadro para completar -->
-    <input type="number">
+    <input type="number"> <!-- lo mismo pero con numeros -->
     <bdo dir="ltr">Texto al derecho,</bdo>
     <bdo dir="rtl">,Texto del revés</bdo>
     <del>Texto tachado,</del>
-    <mark>Texto subrayado,</mark>
+    <mark>Texto subrayado</mark>
 
     <h2>Etiquetas de texto</h2>
     <p>Lorem ipsum dolor sit amet <i>consectetur</i> <!-- cursiva --> adipisicing elit. <em>Perferendis</em> <!-- énfasis --> corporis optio, aut quod ea magni odio maxime. Ut, numquam eligendi, culpa <b>laudantium</b> <!-- negrita --> mollitia sed magnam laborum deleniti expedita porro <u>temporibus</u> <!-- subrayado -->.</p>
+
+    <p style="text-align: center;">etiqueta de texto centrado</p>
+    <p style="color: blue;"> etiqueta de texto en color</p>
 
     <h2>Etiquetas font</h2>
     <font face="Arial">Hola</font>
