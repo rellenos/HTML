@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajedrez backup</title>
+    <style>
+        body {font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: darkgoldenrod;}
+        table, thead, tfoot, th {border: 4px solid black; border-collapse: collapse; text-align: center; }
+        thead, tfoot, th {height: 30px; background-color: white;}
+        .white {background-color: white; color: black; height: 60px; width: 60px;}
+        .black {background-color: black; color: white; height: 60px; width: 60px;}
+        div.time align="left";
+        /* .upperrow img, .upperrow h3 {rotate: 180deg;} */
+    </style>
+</head>
+<body>
+    <div align="left">
+        <table>
+            <tr>
+                <td>TIME</td>
+            </tr>
+            <tr>
+                <td>456</td>
+            </tr>
+        </table>
+        
+    </div>
+    <div id="chess" align="center">
+        <table id="chess">
+            <tbody>
+                <tr>
+                    <th colspan="8", class="upperrow,"><h3>JUGADOR 2</h3></th>
+                </tr>
+                <tr class="upperrow">
+                    <td class="white"><img src="images/torre.png" height="60px"></td>
+                    <td class="black"><img src="images/caballo.png" height="60px" style="filter: invert();"></td>
+                    <td class="white"><img src="images/alfil.png" height="60px"></td>
+                    <td class="black"><img src="images/reina.png" height="60px" style="filter: invert();"></td>
+                    <td class="white"><img src="images/rey.png" height="60px"></td>
+                    <td class="black"><img src="images/alfil.png" height="60px" style="filter: invert();"></td>
+                    <td class="white"><img src="images/caballo.png" height="60px"></td>
+                    <td class="black"><img src="images/torre.png" height="60px" style="filter: invert();"></td>
+                </tr>
+                <tr class="upperrow">
+                    <td class="black"><img src="images/peon.png" height="60px" style="filter: invert();"></td>
+                    <td class="white"><img src="images/peon.png" height="60px"></td>
+                    <td class="black"><img src="images/peon.png" height="60px" style="filter: invert();"></td>
+                    <td class="white"><img src="images/peon.png" height="60px"></td>
+                    <td class="black"><img src="images/peon.png" height="60px" style="filter: invert();"></td>
+                    <td class="white"><img src="images/peon.png" height="60px"></td>
+                    <td class="black"><img src="images/peon.png" height="60px" style="filter: invert();"></td>
+                    <td class="white"><img src="images/peon.png" height="60px"></td>
+                </tr>
+                <tr>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                </tr>
+                <tr>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                </tr>
+                <tr>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                </tr>
+                <tr>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                </tr>
+                <tr>
+                    <td class="white"><img src="images/peon.png" height="60px"></td>
+                    <td class="black"><img src="images/peon.png" height="60px" style="filter: invert();"></td>
+                    <td class="white"><img src="images/peon.png" height="60px"></td>
+                    <td class="black"><img src="images/peon.png" height="60px" style="filter: invert();"></td>
+                    <td class="white"><img src="images/peon.png" height="60px"></td>
+                    <td class="black"><img src="images/peon.png" height="60px" style="filter: invert();"></td>
+                    <td class="white"><img src="images/peon.png" height="60px"></td>
+                    <td class="black"><img src="images/peon.png" height="60px" style="filter: invert();"></td>
+                </tr>
+                <tr>
+                    <td class="black"><img src="images/torre.png" height="60px" style="filter: invert();"></td>
+                    <td class="white"><img src="images/caballo.png" height="60px"></td>
+                    <td class="black"><img src="images/alfil.png" height="60px" style="filter: invert();"></td>
+                    <td class="white"><img src="images/rey.png" height="60px"></td>
+                    <td class="black"><img src="images/reina.png" height="60px" style="filter: invert();"></td>
+                    <td class="white"><img src="images/alfil.png" height="60px"></td>
+                    <td class="black"><img src="images/caballo.png" height="60px" style="filter: invert();"></td>
+                    <td class="white"><img src="images/torre.png" height="60px"></td>
+                </tr>
+                <tr>
+                    <th colspan="8"><h3>JUGADOR 1</h3></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div align="right">
+        <table>
+            <tr>
+                <td>JUGADOR 1</td>
+                <td>JUGADOR 2</td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>56</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

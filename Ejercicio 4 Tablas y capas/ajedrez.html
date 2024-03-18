@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajedrez</title>
+    <style>
+        body {font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: darkgoldenrod; margin: auto;}
+        th {height: 30px; background-color: white;}
+        /* table, thead, tfoot {border: 4px solid black; border-collapse: collapse; text-align: center; margin: auto;} */
+        .chess {border: 4px solid black; border-collapse: collapse; text-align: center;}
+        .white {background-color: white; color: black; height: 60px; width: 60px;}
+        .black {background-color: black; color: white; height: 60px; width: 60px;}
+        .score {width: 100; border: 4px solid black;}
+        /* .upperrow img, .upperrow h3 {rotate: 180deg;} */
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td rowspan="4"></td>
+                <td rowspan="10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td rowspan="4"></td>
+                <td class="score">JUGADOR 1 <br>23</td>
+                <td style="width: 60px;"></td>
+                <td>
+                    <table class="chess"">
+                        <tbody>
+                            <tr>
+                                <th colspan="8", class="upperrow,"><h3>JUGADOR 2</h3></th>
+                            </tr>
+                            <tr class="upperrow">
+                                <td class="white"><img src="images/torre.png" height="60px"></td>
+                                <td class="black"><img src="images/caballo.png" height="60px" style="filter: invert();"></td>
+                                <td class="white"><img src="images/alfil.png" height="60px"></td>
+                                <td class="black"><img src="images/reina.png" height="60px" style="filter: invert();"></td>
+                                <td class="white"><img src="images/rey.png" height="60px"></td>
+                                <td class="black"><img src="images/alfil.png" height="60px" style="filter: invert();"></td>
+                                <td class="white"><img src="images/caballo.png" height="60px"></td>
+                                <td class="black"><img src="images/torre.png" height="60px" style="filter: invert();"></td>
+                            </tr>
+                            <tr class="upperrow">
+                                <td class="black"><img src="images/peon.png" height="60px" style="filter: invert();"></td>
+                                <td class="white"><img src="images/peon.png" height="60px"></td>
+                                <td class="black"><img src="images/peon.png" height="60px" style="filter: invert();"></td>
+                                <td class="white"><img src="images/peon.png" height="60px"></td>
+                                <td class="black"><img src="images/peon.png" height="60px" style="filter: invert();"></td>
+                                <td class="white"><img src="images/peon.png" height="60px"></td>
+                                <td class="black"><img src="images/peon.png" height="60px" style="filter: invert();"></td>
+                                <td class="white"><img src="images/peon.png" height="60px"></td>
+                            </tr>
+                            <tr>
+                                <td class="white"></td>
+                                <td class="black"></td>
+                                <td class="white"></td>
+                                <td class="black"></td>
+                                <td class="white"></td>
+                                <td class="black"></td>
+                                <td class="white"></td>
+                                <td class="black"></td>
+                            </tr>
+                            <tr>
+                                <td class="black"></td>
+                                <td class="white"></td>
+                                <td class="black"></td>
+                                <td class="white"></td>
+                                <td class="black"></td>
+                                <td class="white"></td>
+                                <td class="black"></td>
+                                <td class="white"></td>
+                            </tr>
+                            <tr>
+                                <td class="white"></td>
+                                <td class="black"></td>
+                                <td class="white"></td>
+                                <td class="black"></td>
+                                <td class="white"></td>
+                                <td class="black"></td>
+                                <td class="white"></td>
+                                <td class="black"></td>
+                            </tr>
+                            <tr>
+                                <td class="black"></td>
+                                <td class="white"></td>
+                                <td class="black"></td>
+                                <td class="white"></td>
+                                <td class="black"></td>
+                                <td class="white"></td>
+                                <td class="black"></td>
+                                <td class="white"></td>
+                            </tr>
+                            <tr>
+                                <td class="white"><img src="images/peon.png" height="60px"></td>
+                                <td class="black"><img src="images/peon.png" height="60px" style="filter: invert();"></td>
+                                <td class="white"><img src="images/peon.png" height="60px"></td>
+                                <td class="black"><img src="images/peon.png" height="60px" style="filter: invert();"></td>
+                                <td class="white"><img src="images/peon.png" height="60px"></td>
+                                <td class="black"><img src="images/peon.png" height="60px" style="filter: invert();"></td>
+                                <td class="white"><img src="images/peon.png" height="60px"></td>
+                                <td class="black"><img src="images/peon.png" height="60px" style="filter: invert();"></td>
+                            </tr>
+                            <tr>
+                                <td class="black"><img src="images/torre.png" height="60px" style="filter: invert();"></td>
+                                <td class="white"><img src="images/caballo.png" height="60px"></td>
+                                <td class="black"><img src="images/alfil.png" height="60px" style="filter: invert();"></td>
+                                <td class="white"><img src="images/rey.png" height="60px"></td>
+                                <td class="black"><img src="images/reina.png" height="60px" style="filter: invert();"></td>
+                                <td class="white"><img src="images/alfil.png" height="60px"></td>
+                                <td class="black"><img src="images/caballo.png" height="60px" style="filter: invert();"></td>
+                                <td class="white"><img src="images/torre.png" height="60px"></td>
+                            </tr>
+                            <tr>
+                                <th colspan="8"><h3>JUGADOR 1</h3></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td style="width: 60px;"></td>
+                <td class="score">JUGADOR 2 <br>65</td>
+                <td rowspan="4"></td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

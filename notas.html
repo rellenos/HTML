@@ -4,7 +4,6 @@
         lang: Atributo
         es: Valor del atributo -->
 
-
 <!DOCTYPE html>    <!-- Etiqueta que establece que el documento es HTML --> 
 <html lang="es">    <!-- Lenguaje de la pagina -->
 <head>      <!-- Etiqueta que contiene la info y config de la pag. web -->
@@ -14,8 +13,16 @@
     <meta name="author" content="Daniel"> <!-- Autor de la página -->
     <meta name="keywords" content="grup cief, curso ifcd0110, confeccion web, HTML5, CSS3, JavaScript"> <!-- Tags -->
     <title>notas</title>    <!-- Titulo de la pagina -->
-    <style>
-        ul{list-style-type: none;}  /*Suprime los puntos en la lista  desordenada*/
+    <!-- Estilos incrustados  -->
+    <style>    /* Dentro de la etiqueta style, todo el codigo es CSS */
+        /* selector de etiqueta, por ID y por Clase */
+        /* Por etiquetas */
+        /* table, tr, td{border: 1px solid red; color: blue; } Añade un borde a la tabla */
+        ul{list-style-type: none;}  /* Suprime los puntos en la lista  desordenada */
+
+        /* por ID */
+        #tablagatos {font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif; border: 2px solid green; background-color: yellow;text-align: center;}
+        #tablaasistencia td, th {border: 2px solid green; border-collapse: collapse;}
     </style>
 </head>
 
@@ -31,7 +38,7 @@
     <h6>Titulo h6 - La menor importancia</h6>
     
     <h2>Imagenes</h2>
-    <img src="../Images/cief.png" alt="imagen cief" style="width:128px"> <!-- src indica la fuente de la imagen. alt indica que hubo un error en la imagen, style indica el tamaño en pantalla con width y height-->
+    <img src="./Ejercicio 2 Links/Images/cief.png" alt="imagen cief" style="width:128px"> <!-- src indica la fuente de la imagen. alt indica que hubo un error en la imagen, style indica el tamaño en pantalla con width y height-->
 
     <h2>Párrafos</h2>
     <p> <!-- Párrafo-->
@@ -65,13 +72,13 @@
 
     <h2>Imagenes</h2>
     <a href="./page1.html" target="_blank">  <!-- Imagen con link -->
-        <img src="../Images/cief.png" style="width:128px">
+        <img src="./Ejercicio 2 Links/Images/cief.png" style="width:128px">
     </a>
     <a href="./page1.html" target="_blank">
-        <img src="../Images/cief2.jpg" style="width:128px">
+        <img src="./Ejercicio 2 Links/Images/cief2.jpg" style="width:128px">
     </a><br>
 
-    <img src="Images/Cat_on_its_back.jpg" style="width: 128px; border: 10px black solid;" alt="gato tumbado">
+    <img src="./Ejercicio 2 Links/Images/Cat_on_its_back.jpg" style="width: 128px; border: 10px black solid;" alt="gato tumbado">
     <!-- atributo border: tamaño en pixeles, color y tipo-->
 
     <h2>Marcos</h2>
@@ -119,6 +126,104 @@
     <font face="Arial">Hola</font>
     <font face="Courier">Adios</font>
     <font size="5">Texto con tamaño 5</font>
+
+    <h2>Tablas</h2>
+    <!-- tr: filas, td: columnas, th: cabezera de tabla-->
+    <table>
+        <tr>    <!-- primera fila -->
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+        </tr>
+        <tr>    <!-- segunda fila -->
+            <td>3249782</td>
+            <td>Portátil HP</td>
+            <td>300€</td>
+        </tr>
+        <tr>    <!-- tercera fila -->
+            <td>8471937</td>
+            <td>Monitor 4k</td>
+            <td>250€</td>
+        </tr>
+        <tr>    <!-- cuarta fila -->
+            <td>7396292</td>
+            <td>Ratón</td>
+            <td>40€</td>
+        </tr>
+    </table>
+    <h4>Tabla con imagenes</h4>
+    <table id="tablagatos">
+        <tr>
+            <th>Nombre</th>
+            <th>Origen</th>
+            <th>Foto</th>
+        </tr>
+        <tr>
+            <td>Himalayo</td>
+            <td>Suecia</td>
+            <td><img src="img notas/himalayo.jpg" alt="Himalayo" style="width:128px"></td>
+        </tr>
+        <tr>
+            <td>Maine coon</td>
+            <td>EEUU</td>
+            <td><img src="img notas/mainecoon.jpg" alt="Maine coon" style="width:128px"></td>
+        </tr>
+        <tr>
+            <td>Cartujo</td>
+            <td>Siria</td>
+            <td><img src="img notas/cartujo.jpg" alt="Cartujo" style="width:128px"></td>
+        </tr>
+    </table>
+    <h4>Tabla con etiquetas especiales HTML5</h4>
+    <table id="tablaasistencia">
+        <thead>     <!-- cabecera  -->
+            <tr>
+                <th>Nombre y apellidos</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>     <!-- contenido -->
+            <tr>
+                <td>alumno 1</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td>alumno 2</td>
+                <td>x</td>
+                <td></td>
+                <td></td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td>alumno 3</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>alumno 4</td>
+                <td>x</td>
+                <td></td>
+                <td>x</td>
+                <td></td>
+                <td>x</td>
+            </tr>
+        </tbody>
+        <tfoot>     <!-- pie de pagina -->
+
+        </tfoot>
+    </table>
 
 </body>
 </html>
