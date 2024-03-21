@@ -21,8 +21,76 @@
         ul{list-style-type: none;}  /* Suprime los puntos en la lista  desordenada */
 
         /* por ID */
-        #tablagatos {font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif; border: 2px solid green; background-color: yellow;text-align: center;}
-        #tablaasistencia td, th {border: 2px solid green; border-collapse: collapse;}
+        #tablagatos {
+            font-size: 15px; 
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            border: 2px solid green; 
+            background-color: yellow;
+            text-align: center;
+        }
+        #tablaasistencia td, th {
+            border: 2px solid green; 
+            border-collapse: collapse;
+        }
+        #capa1 {
+            width: 50%;
+            height: 100px;
+            background-color: aquamarine;
+            float: left; /* Marca el lugar de la pagina donde colocarse */
+        }
+        #capa2 {
+            width: 50%;
+            height: 100px;
+            background-color: blueviolet;
+            float: right;
+        }
+        #capa3 {
+            width: 100%;
+            height: 100px;
+            background-color: red;
+            clear: both; /* Romper flotacion superior */
+        }
+        #contenedor {
+            width: 800px;
+            height: 1500px;
+            background-color: silver;
+            margin: auto;
+        }
+        #static {
+            position: static;
+            background-color: grey;
+        }
+        #relative {
+            position: relative; /* Relativo al contenedor */
+            top: 150px;
+            left: 300px;
+            background-color: green;
+        }
+        #absolute {
+            position: absolute; /* Relativo a la pagina */
+            top: 3800px;
+            left: 500px;
+            background-color: red;
+        }
+        #fixed {
+            position: fixed; 
+            top: 150px;
+            right: 0;
+            border-radius: 50%; /* para hacer circulos */
+            text-align: center;
+            background-color: blue;
+        }
+        #sticky {
+            position: sticky; /* posicionamiento relativo */
+            top: 0;
+            width: 100%;
+            height: 50px;
+            background-color: orange;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+        }
     </style>
 </head>
 
@@ -224,6 +292,28 @@
 
         </tfoot>
     </table>
+
+    <h2>DIV</h2>
+    <h4>Capas flotantes</h4>
+    <!-- etiqueta div (etiqueta para crear una caja contenedora) -->
+    <div id="capa1">CAPA 1</div>
+    <div id="capa2">CAPA 2</div>
+    <div id="capa3">CAPA 3</div>
+    <!-- escribir # y nombre crea automaticamente el div -->
+
+    <h4>Contenedores dinámicos</h4>
+    <div id="contenedor">
+        <!-- valor que toma un elemento para posicionarse respetando el flujo normal de la pagina -->
+        <div id="static" class="box">Pos. estático</div>
+        <!-- valor que toma un elemento para posicionarse respetando el flujo normal de la pagina con la opcion de COORD. TOP/BOTTOM/LEFT/RIGHT -->
+        <div id="relative" class="box">Pos. relativo</div>
+        <!-- posicionamiento fijo respecto a la ventana del navegador, con la opcion de COORS. TOP/BOTTOM/LEFT/RIGHT -->
+        <div id="absolute" class="box">Pos. absoluto</div>
+        <!-- posicionamiento siempre fijo en el mismo lugar de la pantalla  -->
+        <div id="fixed" class="box">Pos. fijo</div>
+        <!-- posicionamiento fijo al momento de scrollear  -->
+        <div id="sticky">Pos. sticky</div>
+    </div>
 
 </body>
 </html>
