@@ -1,0 +1,40 @@
+#caja1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#tit1 {
+    /* La propiedad que aplicará el navegador si está repetida es la ultima, a no se que apliquemos la clausula !important */
+     /* Color en codigo hexadecimal: 2 primeros digitos (0-F) ROJO, 2 siguientes (0-F) VERDE y 2 ultimos (0-F) AZUL */
+    color: #0000ff;
+   
+    /* rgb: lo mismo que en hexadecimal pero con valores 0-225 */
+    color: rgb(225, 0, 0);
+    /* rgba aplica una opacidad del 0 al 1 */
+    color: rgba(0, 0, 225, 0.3);
+}
+
+#ul1 {
+    list-style-type: square;
+}
+
+.tit2 {
+    color: #0f0;
+}
+
+.remarcado {
+    color: #ff0;
+}
+
+#p2 {
+    color: #639;
+}
+
+/* pseudoclase hover (pasar por encima con el raton) */
+#id:hover {
+    color: orange;
+    background-color: rebeccapurple;
+}
+
+

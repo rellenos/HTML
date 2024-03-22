@@ -1,0 +1,62 @@
+/* Selector universal, tambien llamado reset */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    /* no afecta el tamaño del padding, border y margen de los elementos */
+    list-style-type: none;
+    font-family: verdana;
+}
+
+header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 2;
+}
+
+header img {
+    height: 100px;
+    margin: 10px;
+}
+
+header nav {
+    float: right;
+    margin: 35px 0;
+}
+
+header ul {
+    padding: 15px;
+    background-color: #F16524;
+    overflow: hidden;
+}
+
+header li {
+    display: inline;
+}
+
+header li a {
+    color: white;
+    padding: 30px;
+    text-decoration: none;
+}
+
+header li a:hover {
+    background-color: #E54C21;
+}
+
+#bg {
+    width: 75%;
+    margin: auto;
+    position: relative;
+    top: 140px;
+    padding: 20px;
+    background-color: grey;
+}
+
+#bg img {
+    margin: 20px;
+    height: 200px;
+    width: 250px;
+}
