@@ -1,0 +1,40 @@
+.caja {
+    width: 100px;
+    height: 100px;
+}
+
+.cajaRoja {
+    display: inline-block;
+    width: 200px;
+    height: 1000px;
+    background-color: lightcoral;
+}
+
+.cajaFija {
+    top: 100px;
+    position: fixed;
+    background-color: lightgreen;
+}
+
+.cajaRelativa {
+    position: relative;
+    display: inline-block;
+    left: 300px;
+    background-color: lightblue;
+}
+
+.cajaAbsoluta {
+    position: absolute;
+    display: inline-block;
+    right: 300px;
+    background-color: yellow;
+}
+
+.circulo {
+    position: relative;
+    margin: 20px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
