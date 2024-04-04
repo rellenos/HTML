@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+body {
+    background-color: #bbb;
+}
+
+h2 {
+    margin-left: 5%;
+}
+
+h4 {
+    text-align: center;
+}
+
+.separator {
+    border: 1px dotted #111;
+}
+
+.container {
+    display: flex;
+}
+
+.content {
+    border: 2px solid #111;
+    margin: 0 20px;
+    width: 400px;
+    height: auto;
+    display: flex;
+}
+
+.wrapContent {
+    border: 2px solid #111;
+    margin: 0 20px;
+    width: 250px;
+    height: auto;
+    display: flex;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    padding: 20px;  
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.brown {
+    background-color: darkmagenta;
+}
+
+.flex-directionRow {
+    flex-direction: row;
+}
+
+.flex-directionRowReverse {
+    flex-direction: row-reverse;
+}
+
+.flex-directionColumn {
+    flex-direction: column;
+}
+
+.flex-directionColumnReverse {
+    flex-direction: column-reverse;
+}
+
+.flex-wrapNoWrap {
+    flex-wrap: nowrap;
+}
+
+.flex-wrapReverse {
+    flex-wrap: wrap-reverse;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
