@@ -88,10 +88,6 @@ footer {
     flex-wrap: wrap;
 }
 
-footer nav {
-    
-}
-
 footer nav li {
     margin: 20px 0;
     font-size: 15px;
@@ -101,7 +97,6 @@ footer nav a {
     display: flex;
     flex-direction: column;
     align-content: flex-end;
-    text-justify: ;
 }
 
 footer nav a:hover, .legal a:hover {
@@ -118,10 +113,6 @@ footer nav a:hover, .legal a:hover {
     padding: 0 40px;
     
     justify-content: space-between;
-}
-
-.footerLogo {
-
 }
 
 .footerColumn {
