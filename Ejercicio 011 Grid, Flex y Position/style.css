@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: arial;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-areas:
+        'gridHeader     gridHeader      gridHeader'
+        'gridNav        gridMain        gridAside'
+        'footer         footer          footer';
+    grid-template-columns: 15% 70% 15%;
+    margin: 0;
+}
+
+.gridMain {
+    display: grid;
+    grid-template-areas:
+        'mainTitle      mainTitle'
+        'gridSection    gridSection';
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    border: 3px solid black;
+    background-color: lightcoral;
+    grid-area: gridMain;
+    padding: 20px;
+}
+
+.gridSection {
+    display: grid;
+    grid-template-areas:
+        'titleArticle   titleArticle'
+        'gridArticle    gridArticle';
+    grid-template-columns: 50% 50%;
+    border: 3px solid black;
+    background-color: lightpink;
+}
+
+.gridAside {
+    display: grid;
+    grid-template-areas:
+        'asideImg'
+        'asideImg';
+    grid-template-rows: 50% 50%;
+    background-color: lightblue;
+    grid-area: gridAside;
+    padding: 10px;
+}
+
+.gridHeader {
+    display: grid;
+    grid-template-areas: 'headerLogo headerTitle headerLogo2';
+    grid-template-columns: 7% 86% 7%;
+    background-color: lightgray;
+    grid-area: gridHeader;
+    padding: 20px;
+}
+
+.headerLogo {
+    grid-area: headerLogo;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.headerLogoEmpty {
+    width: 100px;
+    height: 100px;
+}
+
+.headerTitle {
+    grid-area: headerTitle;
+    padding: 10px;
+}
+
+.titleArticle {
+    grid-area: titleArticle;
+    padding: 10px;
+}
+
+.mainTitle {
+    grid-area: mainTitle;
+}
+
+
+.gridArticle {
+    background-color: lightgreen;
+    padding: 20px;
+    margin: 20px;
+}
+
+.gridNav {
+    background-color: lightblue;
+    grid-area: gridNav;
+    padding: 30px;
+}
+
+li {
+    padding: 10px;
+}
+
+a {
+    color: #111;
+}
+
+footer {
+    background-color: #666;
+    grid-area: footer;
+    padding: 100px;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+.gridArticle img,
+.flexArticle img {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.gridAside img {
+    grid-area: asideImg;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.asideImg {
+    margin: 10px;
+}
+
+/* ---------------------------------------- */
+
+.flexContainer,
+.flexHeader,
+.flexNav,
+.flexSection,
+.flexArticle,
+.flexAside,
+.flexRow {
+    display: flex;
+}
+
+.flexContainer {
+    flex-direction: column;
+}
+
+.flexHeader {
+    background-color: lightgray;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.flexRow {
+    justify-content: space-around;
+}
+
+.flexNav {
+    background-color: lightblue;
+    width: 15%;
+    justify-content: center;
+}
+
+.flexNav ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 30px;
+}
+
+.flexMain {
+    background-color: lightcoral;
+    width: 70%;
+    padding: 10px;
+    border: 3px solid black;
+}
+
+.flexSection {
+    background-color: lightpink;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+    border: 3px solid #111;
+}
+
+.flexArticle {
+    background-color: lightgreen;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+}
+
+.flexAside {
+    background-color: lightblue;
+    flex-direction: column;
+    width: 15%;
+    padding: 10px;
+}
+
+.flexAside img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.flexAsideImg {
+    height: 50%;
+    margin: 10px;
+}
+
+/* ----------------------------------- */
+
+.posContainer {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.posHeader {
+    position: absolute;
+    background-color: lightgrey;
+    width: 100%;
+    height: 140px;
+    padding: 20px;
+    clear: both;
+
+}
+
+.posHeader img{
+    position: static;
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.posHeader h2 {
+    position: absolute;
+    border: 1px solid black;
+    right: 708px;
+}
+
+.posRow {
+    position: relative;
+    top: 140px;
+    /* width: 100%; */
+}
+
+.posNav {
+    background-color: lightblue;
+    position: absolute;
+    width: 15%;
+    height: 500px;
+}
+
+.posMain {
+    background-color: lightcoral;
+    position: absolute;
+    width: 70%;
+    height: 500px;
+    left: 225px;
+}
+
+.posAside {
+    background-color: lightblue;
+    position: absolute;
+    width: 15%;
+    right: 0px;
+    height: 500px;
+}
+
+.posSection section {
+    position: relative;
+    background-color: lightpink;
+}
+
+.posSection article {
+    position: static;
+    background-color: lightgreen;
+}
+
+.articleLeft {
+    float: left;
+}
+
+.articleRight {
+    float: right;
+}
