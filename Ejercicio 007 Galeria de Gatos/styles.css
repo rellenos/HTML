@@ -6,32 +6,53 @@
     list-style-type: none;
     font-family: verdana;
     text-decoration: none;
-    /* color: white; */
+}
+
+main {
+    height: 100%;
+    flex-grow: 1;
+}
+
+body {
+    flex-direction: column;
+    /* flex-grow: 1; */
+}
+
+html,body {
+    height: 100%;
 }
 
 a {
     color: white;
 }
 
-.shadow, header a:hover, article img {
+.shadow,
+header a:hover,
+article img {
     width: auto;
     height: auto;
     box-shadow: 0 4px 8px 0 #11111133, 0 6px 20px 0 #11111133;
     text-align: center;
 }
 
-body, header, header nav, article, footer, .legal, #mainRazas, .articleImg, aside ul, .legal, .social, .footerColumn, .footer nav ul{
+
+main,
+body,
+header,
+header nav,
+article,
+footer,
+aside ul,
+.legal,
+.articleImg,
+.social,
+.footerColumn,
+.legal,
+.footer nav ul, 
+#mainRazas {
     display: flex;
 }
 
-body {
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-html, body {
-    height: 100%;
-}
 
 header {
     position: fixed;
@@ -44,7 +65,8 @@ header {
     flex-wrap: wrap;
 }
 
-header img, footer img {
+header img,
+footer img {
     height: 80px;
     margin: 10px 30px;
     filter: invert();
@@ -79,7 +101,6 @@ article img {
 
 footer {
     color: white;
-
     width: 100%;
     padding: 30px 150px;
     background-color: #232528;
@@ -99,7 +120,8 @@ footer nav a {
     align-content: flex-end;
 }
 
-footer nav a:hover, .legal a:hover {
+footer nav a:hover,
+.legal a:hover {
     text-decoration: underline;
 }
 
@@ -111,7 +133,6 @@ footer nav a:hover, .legal a:hover {
     display: flex;
     font-size: 10px;
     padding: 0 40px;
-    
     justify-content: space-between;
 }
 
@@ -178,8 +199,3 @@ aside li a:hover {
 }
 
 /*-------------------------------------*/
-
-
-
-
-

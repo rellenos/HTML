@@ -1,0 +1,119 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+@font-face {
+    font-family: montserrat;
+    src: url(./Montserrat-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "DotGothic16", sans-serif;
+    letter-spacing: .2em;
+    text-decoration: none;
+    color: #111;
+}
+
+
+.p-1 {
+    padding: 1%;
+}
+
+.f-1 {
+    font-family: "montserrat";
+}
+
+.shadow {
+    box-shadow: 0 0 10px #222;
+}
+
+header, main, footer, header nav, header ul, body {
+    display: flex;
+}
+
+main {
+    flex-grow: 1;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    flex-direction: column;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px 0;
+}
+
+header i {
+    font-size: 2.5em;
+    margin: 10px 30px;
+}
+
+header nav {
+    font-size: 1em;
+    background-color: #ccc;
+    padding: 10px 10px;
+    border: 2px solid #555;
+    border-radius: 50px 0 0 50px;
+}
+
+header nav a {
+    padding: 10px 30px;
+    /* color: #111; */
+}
+
+header nav a:hover {
+    background-color: #eee;
+    border-radius: 50px;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+main {
+        
+}
+
+aside {
+    width: 20%;
+    background-color: #ccc;
+}
+
+aside ul {
+    list-style-type: circle;  
+}
+
+aside li {
+    margin: 5% 0;
+}
+
+aside li:hover {
+    cursor: text;
+}
+
+section {
+    width: 80%;
+    background-color: #ddd;
+}
+
+footer {
+    justify-content: center;
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.socialMedia i {
+    color: #fff;
+    font-size: 30px;
+    margin: 10px;
+}

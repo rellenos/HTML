@@ -118,7 +118,8 @@ h3 {
 }
 
 .gridArticle img,
-.flexArticle img {
+.flexArticle img,
+.posArticle img {
     width: 100%;
     height: 150px;
     margin-top: 20px;
@@ -220,9 +221,10 @@ h3 {
 /* ----------------------------------- */
 
 .posContainer {
+    background-color: lightblue;
     position: relative;
     width: 100%;
-    height: 100px;
+    height: 1105px;
 }
 
 .posHeader {
@@ -253,22 +255,23 @@ h3 {
 .posRow {
     position: relative;
     top: 140px;
-    /* width: 100%; */
+    width: 100%;
 }
 
 .posNav {
     background-color: lightblue;
     position: absolute;
     width: 15%;
-    height: 500px;
+    height: 100%;
 }
 
 .posMain {
     background-color: lightcoral;
     position: absolute;
     width: 70%;
-    height: 500px;
     left: 225px;
+    padding: 10px;
+    border: 3px solid black;
 }
 
 .posAside {
@@ -276,23 +279,57 @@ h3 {
     position: absolute;
     width: 15%;
     right: 0px;
-    height: 500px;
+    height: 100%;
+    padding: 10px;
 }
 
-.posSection section {
-    position: relative;
+.posAside img {
+    border: 1px solid black;
+    margin: 10px;
+    width: 100%;
+    
+
+}
+
+.posSection {
     background-color: lightpink;
+    margin: 10px;
+    border: 3px solid black;
 }
 
-.posSection article {
+.posArticle {
     position: static;
     background-color: lightgreen;
+    padding: 20px;
+    margin: 20px;
+}
+
+.posSectionLeft {
+    position: relative;
+    float: left;
+    width: 48%;
+}
+
+.posSectionRight {
+    position: relative;
+    float: right;
+    width: 48%;
 }
 
 .articleLeft {
+    width: 40%;
+    position: relative;
     float: left;
 }
 
 .articleRight {
+    width: 40%;
+    position: relative;
     float: right;
+}
+
+.posContainer footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
