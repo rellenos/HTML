@@ -8,11 +8,11 @@
     font-family: "DotGothic16", sans-serif;
     letter-spacing: .2em;
     text-decoration: none;
-    color: #fff;
+    color: #ddd;
 }
 
 .p-1 {
-    padding: 1%;
+    padding: 2% 1%;
 }
 
 .shadow {
@@ -29,6 +29,7 @@ main {
 
 html, body {
     height: 100%;
+    background-color: #333;
 }
 
 body {
@@ -50,8 +51,6 @@ header i {
 }
 
 header nav {
-    font-size: 1em;
-    background-color: #333;
     padding: 10px 10px;
     border: 2px solid #555;
     border-radius: 10px 0 0 10px;
@@ -59,43 +58,67 @@ header nav {
 
 header nav a {
     padding: 10px 30px;
-    /* color: #111; */
 }
 
 header nav a:hover {
+    color: #222;
     background-color: #eee;
     border-radius: 50px;
 }
 
-header ul{
+header nav ul{
     list-style-type: none;
 }
 
-main {
-        
+aside {
+    width: 25%;
+    border-right: 2px dashed #fff;
+    font-size: .9em;
 }
 
-aside {
-    width: 20%;
-    background-color: #333;
-    border-right: 2px dashed #fff;
+/* aside nav {
+    position: sticky;
+    top: 3%;
+} */
+
+aside a:hover {
+    color: #fff;
 }
 
 aside ul {
-    list-style-type: circle;  
+    list-style-type: circle;
+    position: relative;
 }
 
-aside li {
-    margin: 5% 0;
+aside li ul {
+    display: none;
+}
+
+aside ul, aside li {
+    width: 150px;
+    margin-bottom: 20px;
 }
 
 aside li:hover {
-    cursor: text;
+    color: #fff;
+    cursor: default;
+    text-decoration: underline;
+}
+
+aside li:hover > ul {
+    display: inline-block;
+    position: absolute;
+    left: 150px;
 }
 
 section {
-    width: 80%;
-    background-color: #333;
+    padding: 2%;
+    width: 75%;
+}
+
+article p {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 footer {
@@ -106,7 +129,6 @@ footer {
 }
 
 .socialMedia i {
-    color: #fff;
     font-size: 30px;
     margin: 10px;
 }

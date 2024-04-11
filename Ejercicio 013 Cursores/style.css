@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    background-color: #3F384C;
+    color: #CDC2DB;
+    font-family: arial;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    border: 1px dashed;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 11%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 2%;
+    padding: 1%;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #111;
+    background-color: #292335;
+}
+
+.box:hover {
+    color: #111;
+    background-color: #aaa;
+}
+
+.alias {cursor: alias;}
+.all-scroll {cursor: all-scroll;}
+.auto {cursor: auto;}
+.cell {cursor: cell;}
+.col-resize {cursor: col-resize;}
+.context-menu {cursor: context-menu;}
+.copy {cursor: copy;}
+.crosshair {cursor: crosshair;}
+.default {cursor: default;}
+.e-resize {cursor: e-resize;}
+.ew-resize {cursor: ew-resize;}
+.grab {cursor: grab;}
+.grabbing {cursor: grabbing;}
+.help {cursor: help;}
+.move {cursor: move;}
+.n-resize {cursor: n-resize;}
+.ne-resize {cursor: ne-resize;}
+.nesw-resize {cursor: nesw-resize;}
+.ns-resize {cursor: ns-resize;}
+.nw-resize {cursor: nw-resize;}
+.nwse-resize {cursor: nwse-resize;}
+.no-drop {cursor: no-drop;}
+.none {cursor: none;}
+.not-allowed {cursor: not-allowed;}
+.pointer {cursor: pointer;}
+.progress {cursor: progress;}
+.row-resize {cursor: row-resize;}
+.s-resize {cursor: s-resize;}
+.se-resize {cursor: se-resize;}
+.sw-resize {cursor: sw-resize;}
+.text {cursor: text;}
+.url {cursor: url(myBall.cur),auto;}
+.w-resize {cursor: w-resize;}
+.wait {cursor: wait;}
+.zoom-in {cursor: zoom-in;}
+.zoom-out {cursor: zoom-out;}

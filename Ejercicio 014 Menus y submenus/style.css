@@ -1,0 +1,43 @@
+* {
+    font-family: verdana;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+}
+
+li ul {
+    display: none;
+}
+
+nav > ul {
+    display: inline-block;
+    text-align: center;
+}
+
+ul, li {
+    display: flex;
+    background-color: lightskyblue;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+li:hover > ul  {
+    display: inline-block;
+    position: absolute;
+    left: 150px;
+    background-color: lightskyblue;
+}
+
+li:hover {
+    background-color: lightblue;
+}
