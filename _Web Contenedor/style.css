@@ -19,6 +19,12 @@
     box-shadow: 0 0 10px #222;
 }
 
+.styleBox {
+    padding: 10px 10px;
+    border: 2px solid #555;
+    border-radius: 10px;
+}
+
 header, main, footer, header nav, header ul, body {
     display: flex;
 }
@@ -83,6 +89,8 @@ aside {
 
 aside a:hover {
     color: #fff;
+    /* text-decoration: underline; */
+
 }
 
 aside ul {
@@ -102,7 +110,7 @@ aside ul, aside li {
 aside li:hover {
     color: #fff;
     cursor: default;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 aside li:hover > ul {
