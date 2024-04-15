@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main > div {
+    text-align: center;   
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    padding: 1.5%;
+    border: 1px dashed black;
+    border-radius: 30px;
+    font-size: 1em;
+}
+
+main > div > div:first-child{
+    font-weight: 600;
+}
+
+ul {
+    text-align: left;
+}
+
+a:hover {
+    background-color: lightblue;
+}
+
+a:visited {
+    color: chartreuse;
+}
+
+a:active {
+    background-color: red;
+}
+
+main > div:nth-child(2) p:first-child {
+    background-color: lightpink;
+}
+
+main > div:nth-child(2) p:last-child {
+    background-color: lightcoral;
+}
+
+main > div:nth-child(3) div + p:first-of-type {
+    background-color: lightblue;
+}
+
+main > div:nth-child(3) p + div:last-of-type {
+    background-color: rgb(128, 143, 240);
+}
+
+main > div:nth-child(3) p + span:last-of-type {
+    background-color: lightskyblue;
+}
+
+main > div:nth-child(4) li:nth-child(2) {
+    background-color: lightgreen;
+}
+
+main > div:nth-child(4) li:nth-last-child(3) {
+    background-color: greenyellow;
+}
+
+main > div:nth-child(5) p:nth-of-type(2) {
+    background-color: yellow;
+}
+
+main > div:nth-child(5) div:nth-of-type(3) {
+    background-color: rgb(238, 238, 115);
+}
+
+main > div:nth-child(6) ul li:only-child {
+    background-color: burlywood;
+}
+
+main > div:nth-child(7) p:only-of-type {
+    background-color: bisque;
+}
+
+main > div:nth-child(8) div:empty {
+    padding: 10px;
+    background-color: purple;
+}

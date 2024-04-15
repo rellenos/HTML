@@ -12,7 +12,11 @@
 }
 
 .p-1 {
-    padding: 2% 1%;
+    padding: 1%;
+}
+
+.m-8 {
+    margin: 8% 0%;
 }
 
 .shadow {
@@ -24,6 +28,8 @@
     border: 2px solid #555;
     border-radius: 10px;
 }
+
+
 
 header, main, footer, header nav, header ul, body {
     display: flex;
@@ -77,20 +83,18 @@ header nav ul{
 }
 
 aside {
-    width: 25%;
+    width: 15%;
     border-right: 2px dashed #fff;
     font-size: .9em;
 }
 
-/* aside nav {
+aside nav {
     position: sticky;
     top: 3%;
-} */
+}
 
-aside a:hover {
+aside a:hover, summary:hover {
     color: #fff;
-    /* text-decoration: underline; */
-
 }
 
 aside ul {
@@ -103,8 +107,8 @@ aside li ul {
 }
 
 aside ul, aside li {
-    width: 150px;
-    margin-bottom: 20px;
+    margin: 10% 0;
+    list-style-type: '/';
 }
 
 aside li:hover {
@@ -119,9 +123,27 @@ aside li:hover > ul {
     left: 150px;
 }
 
+summary, nav > a {
+    font-size: 1.3em;
+}
+
+details > summary {
+    list-style-type: '_';
+    width: 100%;
+    cursor: pointer;
+}
+
+/* details li {
+    padding: 2%;
+} */
+
+summary a:visited {
+    color: #aaa;
+}
+
 section {
     padding: 2%;
-    width: 75%;
+    width: 85%;
 }
 
 article p {

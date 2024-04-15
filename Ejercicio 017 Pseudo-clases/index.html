@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vi"width=device-width, initial-scale=1.0">
+    <title>Pseudo-clases</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pseudo-clases</h1>
+        <hr>
+    </header>
+    <main>
+        <div>
+            <div>:active / :link / :visited / :hover</div>
+            <hr>
+            <div>
+                <a href="https://www.google.es" target="_blank">Ir a google</a><br>
+                <a href="https://www.hotmail.com">Ir al correo</a>
+            </div>
+        </div>
+        <div>
+            <div>:first-child / :last-child</div>
+            <hr>
+            <div>
+                <p>Soy el primer párrafo (:first-child)</p>
+                <p>Soy el segundo párrafo</p>
+                <p>Soy el último párrafo (:last-child)</p>
+            </div>
+        </div>
+        <div>
+            <div>:first-of-type / :last-of-type</div>
+            <hr>
+            <div>
+                <div>Soy el primer div</div>
+                <p>Soy el primer párrafo (:first-of-type)</p>
+                <span>Soy un span (:last-of-type)</span>
+                <p>Soy el segundo párrafo</p>
+                <div>Soy el segundo div (:last-of-type)</div>
+            </div>
+        </div>
+        <div>
+            <div>:nth-child(_) / :nth-last-child(_)</div>
+            <hr>
+            <div>
+                <ul>
+                    <li>Opción 1</li>
+                    <li>Opción 2 (:nth-child(2))</li>
+                    <li>Opción 3</li>
+                    <li>Opción 4</li>
+                    <li>Opción 5</li>
+                    <li>Opción 6 (:nth-last-child(3))</li>
+                    <li>Opción 7</li>
+                    <li>Opción 8</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div>nth-of-type(_) / :nth-last-of-type (_)</div>
+            <hr>
+            <div>
+                <p>Soy el primer párrafo</p>
+                <div>Soy el primer div</div>
+                <div>Soy el segundo div</div>
+                <p>Soy el segundo párrafo</p>
+                <p>Soy el tercer párrafo</p>
+                <span>Soy un span</span>
+                <p>Soy el último párrafo</p>
+                <div>Soy el último div</div>
+            </div>
+        </div>
+        <div>
+            <div>:only-child</div>
+            <hr>
+            <div>
+                <ul>
+                    <li>Lista 1.1</li>
+                    <li>Lista 1.2</li>
+                </ul>
+                <ul>
+                    <li>Lista 2.1</li>
+                </ul>
+                <ul>
+                    <li>Lista 3.1</li>
+                    <li>Lista 3.2</li>
+                    <li>Lista 3.3</li>
+                </ul>
+                <ul>
+                    <li>Lista 4.1</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div>:only-of-type</div>
+            <hr>
+            <div>
+                <div>Soy el primer div
+                    <p>Soy el primer párrafo</p>
+                    <p>Soy el segundo párrafo</p>
+                </div>
+                <div>Soy el segundo div
+                    <p>Soy el tercer párrafo (:only-of-type)</p>
+                </div>
+                <span>Soy el único span</span>
+                <p>Soy el cuarto párrafo (:only-of-type)</p>
+            </div>
+        </div>
+        <div>
+            <div>:empty</div>
+            <hr>
+            <div>
+                <div>Soy el primer div
+                    <p>Soy el primer párrafo</p>
+                    <p>Soy el segundo párrafo</p>
+                </div>
+                <div></div>
+                <span>Soy el único span</span>
+                <p>Soy el último párrafo</p>
+                <div></div>
+                <div>Soy el ultimo div</div>
+            </div>
+        </div>
+        <div>
+            <div></div>
+            <hr>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <hr>
+            <div></div>
+        </div>
+    </main>
+</body>
+</html>
