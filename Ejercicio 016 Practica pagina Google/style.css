@@ -3,16 +3,15 @@
     box-sizing: border-box;
     font-family: sans-serif;
     list-style-type: none;
-    color: #474747;
 }
 
-main, body, header, header nav, header ul, footer, .rowContainer, .search, .buttons, .terms ul, .terms nav, .terms nav div, .justifyLeft, .justifyRight {
+main, body, header, header nav, header ul, footer, .rowContainer, .search, .buttons, .terms nav, .terms nav div, .justifyLeft, .justifyRight {
     display: flex;
 }
 
 main {
+    flex-direction: column;
     flex-grow: 1;
-    font-size: .8em;
     padding: 50px;
 }
 
@@ -22,11 +21,12 @@ html, body {
 
 body {
     flex-direction: column;
+    font-size: 14px;
 }
 
 a {
     text-decoration: none;
-    color: rgba(0, 0, 0, .87);
+    color: #474747;
 }
 
 a:hover {
@@ -37,33 +37,39 @@ button {
     cursor: pointer;
 }
 
-/* ---------------- */
-
-header {
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 5px;
-    font-size: .8em;
-    color: rgba(0, 0, 0, .87);
-}
-
-header ul {
+ul {
     align-items: center;
     padding: 10px;
 }
 
-header nav {
-    height: 50px;
+li {
+    margin: 5px 10px;
 }
 
-header li {
-    margin: 5px 10px;
+.alignCenter {
+    align-items: center;
+    justify-content: center;
+}
+
+/* --------HEADER-------- */
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    height: 60px;
+}
+
+header > div:first-child {
+    font-size: 14px;
+}
+
+header > div:last-child {
+    font-size: 13px;
 }
 
 .appsButton {
     display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 20px;
     height: 40px;
     width: 40px;
@@ -88,13 +94,14 @@ header li {
 .appsMenu {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 54px;
     right: 35px;
     padding: 20px;
     border-radius: 40px;
     background-color: #F8FAFD;
     border: 10px solid #ddd;
     box-shadow: 0 0 20px #ccc;
+    cursor: default;
 }
 
 .appsMenu img {
@@ -116,26 +123,19 @@ header li {
     background-color: #196ad4;
 }
 
-
-/* ---------------- */
-
-main {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+/* ---------MAIN------- */
 
 .logo img {
-    width: 20em;
+    width: 272px;
 }
 
 .search {
+    align-items: center;
+    justify-content: space-between;
     width: 600px;
     margin: 20px;
     border: 1px solid #ccc;
     border-radius: 50px;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .search:hover {
@@ -163,9 +163,6 @@ input {
 }
 
 .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 600px;
     margin: 20px;
 }
@@ -182,12 +179,8 @@ input {
     box-shadow: 0 2px 5px #ccc;
 }
 
-/* ---------------- */
-
-footer {
-    display: block;
-    background-color: #F2F2F2;
-    font-size: .8em;
+.languages {
+    font-size: small;
 }
 
 .languages a {
@@ -195,18 +188,25 @@ footer {
     color: #1A0DAB;
 }
 
-.terms, .region {
-    padding: 15px 30px;
-    border-top: 1px solid #ddd;
+/* --------FOOTER-------- */
+
+footer {
+    display: block;
+    background-color: #F2F2F2;
 }
 
-.terms ul {
-    padding: 0;
-    width: 30%;
+.terms {
+    padding: 0 20px;
+    
 }
 
 .terms li {
-    margin: 0 2%;
+    padding: 15;
+}
+
+.region {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
 }
 
 .terms nav, .terms nav div {
@@ -216,11 +216,11 @@ footer {
 }
 
 .justifyLeft {
-    justify-content: left;
+    justify-content: flex-start;
 }
 
 .justifyRight {
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 .hoja {
