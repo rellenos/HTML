@@ -29,8 +29,6 @@
     border-radius: 10px;
 }
 
-
-
 header, main, footer, header nav, header ul, body {
     display: flex;
 }
@@ -132,7 +130,13 @@ details > summary {
     list-style-type: '_';
     width: 100%;
     cursor: pointer;
+    /* transition-duration: 1s;
+    transition-timing-function: ease-out; */
 }
+
+/* details[open] summary {
+    margin-bottom: 852px;
+  } */
 
 /* details li {
     padding: 2%;

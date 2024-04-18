@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.containerLoading {
+    box-sizing: content-box;
+    border: 1px solid #111;
+    width: 300px;
+    height: 50px;
+}
+
+.loading {
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+    transition-duration: 4s;
+    transition-timing-function: ease-out;
+}
+
+.loading:hover {
+    width: 100%;
+    background-color: blue;
+}
+
+.containerPoint {
+    box-sizing: content-box;
+    border: 1px solid #111;
+    border-radius: 50px;
+    width: 300px;
+    height: 50px;
+}
+
+.point {
+    vertical-align: middle;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgb(220, 0, 0);
+    border-radius: 100%;
+    transition: 1s;
+    transition-duration: 4s;
+    transition-timing-function: ease;
+}
+
+.containerPoint:hover .point {
+    transform: translateX(250px);
+}
+
+/* ------------------ */
+
+td {
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    font-size: small;
+    border: 2px solid #111;
+}
+
+tr:nth-child(1n+2) td:last-child {
+    opacity: 0;
+    background-image: url(../biblioteca/images/estrella.gif);
+    background-size: contain;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+tr:nth-child(1n+2) td:last-child:hover {
+    opacity: 1;
+    cursor: pointer;
+    
+}
