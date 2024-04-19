@@ -10,7 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./css/main.css" >
-    <link rel="stylesheet" href="./css/index.html">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -34,7 +36,7 @@
         <div class="headerBottom displayFlex ">
             <nav>
                 <ul class="displayFlex alignCenter">
-                    <li><img src="./images/GrupCief.png" alt="Logo Grup CIEF"></li>
+                    <li><a href="#"><img src="./images/GrupCief.png" alt="Logo Grup CIEF"></a></li>
                     <li class="navLink">GRUP CIEF <i class="bi bi-caret-down-fill"></i>
                     <ul class="down-menu">
                         <li>¿Quienes somos?</li>
@@ -79,6 +81,43 @@
     </header>
 
     <main>
+        <div class="sidebar sidebar-active">
+            <div class="contactButton">
+                CONTACTO
+            </div>
+            <div class="form">
+                <h6>DATOS DE CONTACTO</h6>
+                <div class="input">
+                    <input type="text" placeholder="Nombre*">
+                    <input type="text" placeholder="Apellidos*">
+                    <input type="text" placeholder="Correo*">
+                    <input type="text" placeholder="Teléfono*">
+                    <details>
+                        <summary>Província*</summary>
+                        <span>Barcelona</span>
+                    </details>
+                    <input type="text" placeholder="Dinos en que podemos ayudarte">
+                </div>
+                <div class="privacity">
+                    <p>Doy mi consentimiento para que Grup CIEF trate mis datos con el fin de enviarme información de interés sobre sus productos y servicios y la del resto de entidades dentro del grupo de empresas. Marcando el siguiente cuadro, el usuario acepta estar sujeto a la <a href="#">Política de Privacidad</a> revisada.</p>
+                </div>
+                <div class="checkbox justifyCenter">
+                    <div>
+                        <input type="checkbox">
+                    </div>
+                    <div>
+                        <p>Acepto el <a href="#">aviso legal</a> y la <a href="#">política de privacidad</a></p>
+                    </div>
+                </div>
+                <div class="sendButton justifyCenter">
+                    <div class="icon-send">
+                        <i class="bi bi-send-fill"></i>
+                    </div>
+                    <input _ngcontent-cak-c34="" type="submit" value="ENVIAR">
+                </div>
+            </div>
+        </div>
+        <div class="empty"></div>
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -103,36 +142,107 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+
+        <section class="justifyCenter flexColumn">
+            <div class="title-h2 justifyCenter">
+                <h2>SERVICIOS EMPRESA</h2>
+            </div>
+            <div class="gallery-services justifyCenter">
+                <div class="services flexColumn alignCenter ">
+                    <img src="./images/formacio_in_company.jpg" alt="Formación in Company" class="gallery-movement">
+                    <h6>Formación in Company</h6>
+                    <p>Formación personalizada de gran impacto con tranferencia real en el lugar de trabajo</p>
+                </div>
+                <div class="services flexColumn alignCenter">
+                    <img src="./images/formacio_online.jpg" alt="Formación Online" class="gallery-movement">
+                    <h6>Formación Online</h6>
+                    <p>Metodología dinámica, seguimiento individualizado y contenidos creados a medida</p>
+                </div>
+                <div class="services flexColumn alignCenter">
+                    <img src="./images/gestio_bonificacions_banner.jpg" alt="Gestión de Bonificaciones" class="gallery-movement">
+                    <h6>Gestión de Bonificaciones</h6>
+                    <p>Optimizamos el seguimiento de tu plan de formación y maximizamos tu crédito</p>
+                </div>
+                <div class="services flexColumn alignCenter">
+                    <img src="./images/gestio_talent_banner.jpg" alt="Desarrollo de Personas" class="gallery-movement">
+                    <h6>Desarrollo de Personas</h6>
+                    <p>Apoyamos tu crecimiento con respuestas personalizadas, útiles y resolutivas</p>
+                </div>
+                <div class="services flexColumn alignCenter">
+                    <img src="./images/seleccio.jpg" alt="Selección" class="gallery-movement">
+                    <h6>Selección</h6>
+                    <p>Incorporamos la persona idónea con el talento que tú necesitas</p>
+                </div>
+                <div class="services flexColumn alignCenter">
+                    <img src="./images/tecnologies_informacio_banner.jpg" alt="Tecnologías de la Información" class="gallery-movement">
+                    <h6>Tecnologías de la Información</h6>
+                    <p>Soluciones flexibles y a medida y servicios robustos y fiables</p>
+                </div>
+                <div class="services flexColumn alignCenter">
+                    <img src="./images/millora_continua.jpg" alt="Mejora Continua" class="gallery-movement">
+                    <h6>Mejora Continua</h6>
+                    <p>Trabajamos contigo para alcanzar la excelencia operacional</p>
+                </div>
+                <div class="services flexColumn alignCenter">
+                    <img src="./images/8_SPA.jpg" alt="Servicio de Prevención Ajeno" class="gallery-movement">
+                    <h6>Servicio de Prevención Ajeno</h6>
+                    <p>Te ayudamos en el cumplimiento de los requisitos legales</p>
+                </div>
+            </div>
+        </section>
+        <div class="separator">
+            <div class="separator-stats">
+                <h4>+ de 30</h4>
+                <p>años de experiencia</p>
+            </div>
+            <div class="separator-stats">
+                <h4>+ de 1.300</h4>
+                <p>empresas clientes en 2019</p>
+            </div>
+        </div>
         <section>
-            
+            <div class="title-h2 justifyCenter">
+                <h2>FORMACIÓN SUBVENCIONADA</h2>
+            </div>
+            <div class="gallery-services justifyCenter">
+                <div class="formation">
+                    <img src="./images/docencia_cercador.jpg" alt="Habilitación para la docencia">
+                    <h6>SUBVENCIONADO DESEMPLEADOS</h6>
+                    <div>
+                        <div>CP - Habilitación para la docencia en grados A, B y C del Sistema de Formación Profesional (SSCE0110)</div>
+                        <div>24/4/2024-8/5/2024</div>
+                        <div>Barcelona</div>
+                        <div>Subvencionado</div>
+                    </div>
+                </div>
+                <div class="formation">
+                    <img src="./images/desarrollo_aplicaciones_web_cercador.jpg" alt="Habilitación para la docencia">
+                    <h6>SUBVENCIONADO DESEMPLEADOS</h6>
+                    <div>
+                        <div>CP - Desarrollo de aplicaciones con tecnología web (IFCD0210)</div>
+                        <div>19/6/2024-30/7/2024</div>
+                        <div>Barcelona</div>
+                        <div>Subvencionado</div>
+                    </div>
+                </div>
+                <div class="formation">
+                    <img src="./images/Gestion_control_aprovisionamiento_cercador.jpg" alt="Habilitación para la docencia">
+                    <h6>SUBVENCIONADO DESEMPLEADOS</h6>
+                    <div>
+                        <div>CP - Gestión y control del aprovisionamiento (COML0210)</div>
+                        <div>31/7/2024-2/12/2024</div>
+                        <div>Reus</div>
+                        <div>Subvencionado</div>
+                    </div>
+                </div>
+            </div>
+            <div class="more-button justifyCenter">
+                <button><i class="bi bi-search"></i>TODOS NUESTROS CURSOS EN ABIERTO</button>
+
+            </div>
         </section>
     </main>
-
-
-
-    <div class="sidebar">
-        <div class="contactButton">
-            CONTACTO
-        </div>
-        <div class="form">
-            <div class="input">
-                <input type="text" placeholder="Nombre*">
-                <input type="text" placeholder="Apellidos*">
-                <input type="text" placeholder="Correo*">
-                <input type="tetx" placeholder="Teléfono*">
-                <details>
-                    <summary>Província*</summary>
-                    <span>Barcelona</span>
-                </details>
-                <input type="text" placeholder="Dinos en que podemos ayudarte">
-            </div>
-            <div class="privacity">
-                <p>Doy mi consentimiento para que Grup CIEF trate mis datos con el fin de enviarme información de interés sobre sus productos y servicios y la del resto de entidades dentro del grupo de empresas. Marcando el siguiente cuadro, el usuario acepta estar sujeto a la <a href="#">Política de Privacidad</a> revisada.</p>
-            </div>
-        </div>
-    </div>
-
-
+    
 
     <footer>
         <div class="footerTop">

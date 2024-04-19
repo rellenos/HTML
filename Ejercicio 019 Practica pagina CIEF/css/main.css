@@ -24,8 +24,6 @@ ul {
     list-style-type: none;
 }
 
-
-
 /* ---------GENERALES---------- */
 
 a {
@@ -42,8 +40,26 @@ a {
 }
 
 .alignCenter {
+    display: flex;
     align-items: center;
 }
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.justifyCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /* ----------HEADER---------- */
 
@@ -159,11 +175,6 @@ footer hr {
     border-top: 1px solid #FFF;
 }
 
-.flex-row {
-    display: flex;
-    justify-content: space-between;
-}
-
 .footerLogos img {
     width: 150px;
     height: auto;
@@ -228,20 +239,46 @@ address img {
 
 /* --------SIDEBAR--------- */
 
+
+.sidebar-active {
+    right: 0px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 50%;
+    z-index: 999;
+    transition: 0.5s;
+    transform: translateY(-50%);
+}
+
+.sidebar:hover {
+    right: 280px;
+}
+
 .contactButton {
-    position: relative;
+    position: absolute;
     display: inline;
-    /* width: 100%; */
+    top: 50%;
+    left: -72px;
     padding: 10px;
     color: #F0F9FF;
     background-color: #0D6A21;
-    transform: rotate(90deg);
+    transform: rotate(270deg);
+    cursor: pointer;
 }
 
 .form {
+    position: absolute;
+    top: -280px;
     width: 280px;
     background-color: #737277;
-    padding: 20px 20px 10px 20px;
+    padding: 20px 20px 10px 20px;    
+}
+
+.form h6 {
+    color: #F0F9FF;
+    text-align: center;
 }
 
 .form input, .form details {
@@ -255,6 +292,11 @@ address img {
 .input {
     display: flex;
     flex-direction: column;
+    font-size: small;
+}
+
+.input input:last-child {
+    height: 70px;
 }
 
 .privacity {
@@ -264,6 +306,33 @@ address img {
 
 .privacity a {
     text-decoration: underline;
+}
+
+.checkbox div {
+    color: #F0F9FF;
+    padding: 10px;
+}
+
+.checkbox p a{
+    text-decoration: underline;
+}
+
+
+.sendButton i, .sendButton input {
+    background-color: #0D6A21;
+    color: #F0F9FF;
+}
+
+.icon-send {
+    text-align: center;
+    width: 33.3px;
+    height: 33.3px;
+    background-color: #0D6A21;
+
+}
+
+.icon-send i {
+    vertical-align: middle;
 }
 
 
