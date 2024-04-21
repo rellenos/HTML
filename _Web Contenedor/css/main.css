@@ -46,6 +46,27 @@ body {
     flex-direction: column;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: #222;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+/* ----------HEADER---------- */
+
 header {
     justify-content: space-between;
     align-items: center;
@@ -63,6 +84,7 @@ header i {
 header nav {
     padding: 10px 10px;
     border: 2px solid #555;
+    border-right: none;
     border-radius: 10px 0 0 10px;
 }
 
@@ -78,92 +100,41 @@ header nav a:hover {
 
 header nav ul{
     padding: 0;
-    list-style-type: none;
 }
 
-aside {
-    width: 15%;
-    border-right: 2px dashed #fff;
-    font-size: .9em;
-}
-
-aside nav {
-    position: sticky;
-    top: 3%;
-}
-
-aside a:hover, summary:hover {
-    color: #fff;
-}
-
-aside ul {
-    list-style-type: circle;
-    position: relative;
-}
-
-aside li ul {
-    display: none;
-}
-
-aside ul, aside li {
-    margin: 10% 0;
-    list-style-type: '/';
-}
-
-aside li:hover {
-    color: #fff;
-    cursor: default;
-    /* text-decoration: underline; */
-}
-
-aside li:hover > ul {
-    display: inline-block;
-    position: absolute;
-    left: 150px;
-}
-
-summary, nav > a {
-    font-size: 1.3em;
-}
-
-details > summary {
-    list-style-type: '_';
-    width: 100%;
-    cursor: pointer;
-    /* transition-duration: 1s;
-    transition-timing-function: ease-out; */
-}
-
-/* details[open] summary {
-    margin-bottom: 852px;
-  } */
-
-/* details li {
-    padding: 2%;
-} */
-
-summary a:visited {
-    color: #aaa;
-}
-
-section {
-    padding: 2%;
-    width: 85%;
-}
-
-article p {
-    text-align: justify;
-    text-justify: inter-word;
-}
+/* ----------FOOTER---------- */
 
 footer {
-    justify-content: center;
+    flex-direction: column;
     background-color: #222;
     width: 100%;
     padding: 20px;
+}
+
+.socialMedia {
+    border-bottom: 1px solid #fff;
 }
 
 .socialMedia i {
     font-size: 30px;
     margin: 10px;
 }
+
+.footerBottom, .terms, .footerBottom ul, .terms span, .footerBottom li, .socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.footerBottom, .socialMedia i {
+    margin: 20px;
+    width: 100%;
+}
+
+footer li:hover {
+    text-decoration: underline;
+}
+
+
+
