@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    /* display: flex; */
+    flex-grow: 1;
+}
+
+header {
+    color: white;
+    background-color: blueviolet;
+    padding: 50px;
+}
+
+nav {
+    background-color: aqua;
+    padding: 30px;
+}
+
+footer {
+    color: white;
+    background-color: teal;
+    padding: 30px;
+}

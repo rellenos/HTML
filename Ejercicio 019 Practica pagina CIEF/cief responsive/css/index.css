@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+.empty {
+    height: 130px;
+}
+
+section {
+    color: #0D6A21;
+    margin: 70px 140px 0;
+}
+
+.title-h2 h2 {
+    margin: 2% 0 40px 0;
+    font-weight: 700;
+    font-size: 1.55em;
+}
+
+.gallery-services {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+
+.services {
+    width: 295px;
+    height: 296px;
+    margin: 0 0 24px;
+    padding: 0 15px;
+    font-size: 13px;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+}
+
+.services img {
+    width: 265px;
+}
+
+.services h6 {
+    margin: 13px 0 12px;
+}
+
+.services p {
+    margin-bottom: 16px;
+}
+
+.gallery-movement {
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+.gallery-movement:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(5px 5px 10px #444);
+    animation-duration: 1s;
+}
+
+.separator {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #B2B2B2;
+    padding: 45px 140px;
+    
+}
+
+.separator-stats {
+    width: 400px;
+    padding: 0 15px;
+}
+
+.separator-stats h4 {
+    margin-bottom: 16px;
+    text-shadow: 1px 0 0 #737277, -1px 0 0 #737277, 0 1px 0 #737277, 0 -1px 0 #737277, 1px 1px #737277, -1px -1px 0 #737277, 1px -1px 0 #737277, -1px 1px 0 #737277;
+    color: white;
+}
+
+.separator-stats p {
+    color: grey;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 16px;
+    padding: 3px;
+}
+
+.formation img{
+    width: 320px;
+}
+
+.formation {
+    width: 350px;
+    
+    color: #000;
+    padding: 0 16px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.formation h6 {
+    cursor: pointer;
+    background-color: #BFB70A;
+    color: #F0F9FF;
+    padding: 4px;
+    margin: 0;
+}
+
+.formation div {
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+.formation > div > div:first-of-type {
+    font-weight: 700;
+}
+
+.formation > div {
+    height: 150px;
+    padding: 12px 15px;
+    border: 0.5px solid #000;
+}
+
+.more-button {
+    margin-bottom: 80px;
+}
+
+.more-button button {
+    width: 500px;
+    padding: 6px 12px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 5px;
+    background-color: #0D6A21;
+    color: #F0F9FF;
+}
+
+.more-button button:hover {
+    background-color: #737277;
+}
+
+.more-button i {
+    padding: 0 8px;
+}

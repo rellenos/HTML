@@ -127,7 +127,7 @@ main h2{
     display: table;
 }
 
-@media only screen and (max-width: 1080px) {
+@media all and (max-width: 1080px) {
     [class*="col-"] {
         width: 100%;
     }
@@ -163,7 +163,7 @@ main h2{
     }
 }
 
-@media only screen and (min-width: 1080px) {
+@media all and (min-width: 1080px) {
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
