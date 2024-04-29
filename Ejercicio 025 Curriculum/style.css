@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --blue: #008BFF;
+    --gray: #494949;
+    --lightgray: #E7E7E7;
+    --white: #fff;
+}
+
+.blue-rotated, .gray, .gray-rotated, .lightgray-container, aside img {
+    position: absolute;
+}
+
+.languages > div, .skills > div, .row-container, body, header, aside, footer {
+    display: flex;
+}
+
+html, body {
+    height: 100%;
+}
+
+.row-container {
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+body {
+    flex-direction: column;
+    background-image: url(./images/background.png);
+    background-size: cover;
+}
+
+h1 {
+    font-size: 5em;
+    color: var(--blue);
+}
+
+aside h2 {
+    font-size: 1.5em;
+}
+
+main h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* ----------ASIDE---------- */
+
+aside {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 1500px;
+    margin: 80px 20px 20px;
+    overflow: hidden;
+    /* background-color: lightcoral; */
+}
+
+aside img {
+    width: 150px;
+    top: 0px;
+}
+
+aside hr {
+    border: 1px solid var(--gray);
+}
+
+aside i {
+    color: var(--blue);
+}
+
+.blue-rotated {
+    top: -130px;
+    transform: rotate(45deg);
+    width: 300px;
+    height: 300px;
+    border: 10px solid var(--white);
+    background-color: #008BFF;
+}
+
+.gray {
+    padding-top: 200px;
+    background-color: var(--gray);
+}
+
+.gray-rotated {
+    top: 280px;
+    transform: rotate(45deg);
+    width: 300px;
+    height: 300px;
+    border: 10px solid var(--white);
+    background-color: var(--gray);
+}
+
+.about-me {
+    color: var(--lightgray);
+    padding: 50px;
+}
+
+.about-me hr {
+    margin-bottom: 10px;
+    border:1px solid var(--lightgray);
+}
+
+.lightgray-container {
+    padding: 250px 30px 30px;
+    top: 400px;
+    width: 100%;
+    background-color: var(--lightgray);
+}
+
+.lightgray-container ul, details ul {
+    margin: 20px 30px;
+    list-style-type: none;
+}
+
+.lightgray-container li, details li {
+    margin-top: 5px;
+}
+
+.lightgray-container h2 {
+    margin: 0 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px;
+}
+
+.grid-item {
+    height: 50px;
+    padding: 20px 0;
+    vertical-align: middle;
+}
+
+/* ----------HEADER---------- */
+
+header {
+    position: fixed;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    color: var(--white);
+    background-color: var(--blue);
+    z-index: 10;
+}
+
+/* ----------MAIN---------- */
+
+main {
+    width: 75%;
+    margin-top: 55px;
+    padding: 30px;
+    /* background-color: lightgreen; */
+}
+
+main hr {
+    margin: 20px 0;
+    border: 1px solid var(--blue);
+}
+
+summary {
+    margin: 10px 20px;
+    font-size: 1.3em;
+    color: var(--blue);
+}
+
+details ul {
+    list-style-type: '- ';
+}
+
+summary:hover {
+    cursor: pointer;
+}
+
+details h3 {
+    margin: 0 20px;
+}
+
+.education-item {
+    margin: 10px 20px;
+}
+
+.education-item span {
+    display: block;
+}
+
+.education-item span:first-child {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.skill-item {
+    margin: 10px 20px;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.skill-name div:last-child {
+    font-style: italic;
+}
+
+.skill-bar {
+    background-color: var(--gray);
+    height: 10px;
+    margin: 10px 0;
+}
+
+.skill-bar-filled {
+    width: 0;
+    height: 100%;
+    background-color: var(--blue);
+    animation: 3s ease 0s 1 skillBarAnimation;
+    animation-fill-mode: forwards;
+}
+
+@keyframes skillBarAnimation {
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
+
+/* .skill-bar-animation {
+    transition: 1s;
+    transition-duration: 4s;
+    transition-timing-function: ease;
+}
+
+.professional-skills .skill-item:nth-child(2) .skill-bar-filled {
+    width: 90%;
+}
+
+.professional-skills:hover .skill-item:nth-child(3) .skill-bar-filled {
+    width: 70%;
+}
+
+.professional-skills:hover .skill-item:nth-child(4) .skill-bar-filled {
+    width: 100%;
+} */
+
+/* ----------FOOTER----------- */
+
+footer {
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    color: var(--white);
+    background-color: var(--blue);
+}
