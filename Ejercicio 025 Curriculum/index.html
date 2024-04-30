@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum</title>
-    
+    <!-- importació d'elements mitjançant CDN. He importat una llibreria d'animacions i un altre d'icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
     <header>
@@ -16,6 +19,7 @@
     </header>
     <div class="row-container">
         <aside>
+            <!-- en el aside hi han diferents seccions i unes caixes decoratives. Estan en ordre invers per a que, visualment, les que estiguin a baix no es superponsin per sobre de les seccions de dalt  -->
             <div class="lightgray-container">
                 <div class="languages">
                     <h2>Idiomas</h2>
@@ -26,10 +30,11 @@
                             <li>Català</li>
                             <li>English</li>
                         </ul>
+                        <!-- secció d'estrelles decoratives amb una animació -->
                         <ul>
-                            <li><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></li>
+                            <li class="animate__bounceIn"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></li>
+                            <li class="animate__bounceIn"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></li>
+                            <li class="animate__bounceIn"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></li>
                         </ul>
                     </div>
                 </div>
@@ -38,20 +43,16 @@
                     <hr>
                     <div>
                         <ul>
-                            <li><i class="fa-solid fa-sitemap"></i></li>
-                            <li><i class="fa-solid fa-calendar-days"></i></li>
-                            <li><i class="fa-solid fa-people-group"></i></li>
-                        </ul>
-                        <ul>
-                            <li>Organización</li>
-                            <li>Planificación</li>
-                            <li>Trabajo en equipo</li>
+                            <li><i class="fa-solid fa-sitemap"></i>&nbsp;Organización</li>
+                            <li><i class="fa-solid fa-calendar-days"></i>&nbsp;Planificación</li>
+                            <li><i class="fa-solid fa-people-group"></i>&nbsp;Trabajo en equipo</li>
                         </ul>
                     </div>
                 </div>
                 <div class="hobbies">
                     <h2>Hobbies</h2>
                     <hr>
+                    <!-- aquesta secció te un display 'grid' per poder acomodar millor el contingut -->
                     <div class="grid-container">
                         <div class="grid-item">
                             <i class="fa-solid fa-plane"></i> Viajar
@@ -68,27 +69,28 @@
                     </div>
                 </div>
             </div>
-            <div class="gray-rotated"></div>
-            <div class="gray">
+            <div class="gray rotated"></div>
+            <div class="gray-container">
                 <div class="about-me">
                     <h2>Sobre mí</h2>
                     <hr>
                     <p>Apasionado del marketing, me defino por ser una persona con ganas de aprender y un gran lider de equipos multidiciplinares</p>
                 </div>
             </div>
-            <div class="blue-rotated">
+            <div class="blue rotated">
             </div>
             <img src="./images/fotoicono.png" alt="Foto">
         </aside>
-
         <main>
             <div class="name">
-                <h1>Juan Garcia</h1>
+                <h1>José Garcia</h1>
                 <h3>Marketing Manager</h3>
             </div>
             <hr>
+            <!-- secció d'experiencia laboral -->
             <div class="workexp">
                 <h2>Experiencia laboral</h2>
+                <!-- els 'summary' permetràn fer un menu desplegable on estarà tot el contingut de cada secció, amb una petita animació d'opertura -->
                 <details>
                     <summary>Marketing Manager</summary>
                     <h3>Inmobiliaria S.L. | 2019-2024</h3>
@@ -110,6 +112,7 @@
                 </details>
             </div>
             <hr>
+            <!-- secció d'educació -->
             <div class="education">
                 <h2>Formación</h2>
                 <div class="education-item">
@@ -126,9 +129,10 @@
                 </div>
             </div>
             <hr>
+            <!-- secció d'habilitats preofessionals -->
             <div class="professional-skills">
                 <h2>Habilidades profesionales</h2>
-
+                <!-- cada 'skill-item' es una habilitat professional, amb el seu titol i barra progresiva -->
                 <div class="skill-item">
                     <div class="skill-name">
                         <div>Trato internacional</div>
@@ -156,6 +160,30 @@
                     </div>
                     <div class="skill-bar">
                         <div class="skill-bar-filled skill-bar-animation"></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h2>Mi tiempo</h2>
+                <div class="my-time">
+                    <div class="my-time-bar">
+                        <div class="forecasting"></div>
+                        <div class="reading"></div>
+                        <div class="marketResearch"></div>
+                        <div class="familyAndFriends"></div>
+                        <div class="coldCalling"></div>
+                        <div class="seminars"></div>
+                    </div>
+                    <div class="my-time-legend">
+                        <ul>
+                            <li><div class="color-legend forecasting"></div>Predicciones (35%)</li>
+                            <li><div class="color-legend reading"></div>Lectura (20%)</li>
+                            <li><div class="color-legend marketResearch"></div>Investigación de mercado (15%)</li>
+                            <li><div class="color-legend familyAndFriends"></div>Amigos y familia (14%)</li>
+                            <li><div class="color-legend coldCalling"></div>Cold calling (10%)</li>
+                            <li><div class="color-legend seminars"></div>Seminarios (6%)</li>
+                        </ul>
                     </div>
                 </div>
             </div>

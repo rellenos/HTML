@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --blue: #008BFF;
+    --gray: #494949;
+    --lightgray: #E7E7E7;
+    --white: #fff;
+}
+
+.blue, .gray, .rotated, .gray-container, .lightgray-container, aside img {
+    position: absolute;
+}
+
+.languages > div, .row-container, body, header, aside, footer, .my-time, .skill-name {
+    display: flex;
+}
+
+aside, header, footer {
+    align-items: center;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* contenidor pare del 'aside' i 'main', nomès per posicionar-los mes còmodament */
+.row-container {
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+/* al 'body' li he possat una imatge decorativa de fons. el paramètre 'background-size' indica com serà el tamany; en aquest cas, la imatge s'emplenarà al 100% de la pantalla, sense  repetirse */
+body {
+    flex-direction: column;
+    background-image: url(./images/background.png);
+    background-size: cover;
+}
+
+/* a tots els 'h' els he assignat un tamany de lletra personalitzat proporcional al tamany inidicat al 'html' */
+h1 {
+    font-size: 5em;
+    color: var(--blue);
+}
+
+aside h2, h3 {
+    font-size: 1.5em;
+}
+
+main h2 {
+    font-size: 2.5em;
+}
+
+/* ----------ASIDE---------- */
+
+aside {
+    position: relative;
+    flex-direction: column;
+    width: 25%;
+    height: 1150px;
+    margin: 80px 20px 20px;
+    overflow: hidden;
+}
+
+aside img {
+    width: 150px;
+    top: 0px;
+}
+
+aside hr {
+    border: 1px solid var(--gray);
+}
+
+aside i {
+    color: var(--blue);
+}
+
+/* aquestes etiquetes son la decoració de colors en l'aside' on he assignat una rotació, un tamany i un border a les caixes girades*/
+.rotated {
+    transform: rotate(45deg);
+    width: 300px;
+    height: 300px;
+    border: 10px solid var(--white);
+}
+
+.blue {
+    top: -130px;
+    background-color: #008BFF;
+}
+
+.gray {
+    top: 280px;
+    background-color: var(--gray);
+}
+
+.gray-container {
+    padding-top: 200px;
+    background-color: var(--gray);
+}
+
+.lightgray-container {
+    padding: 250px 30px 30px;
+    top: 400px;
+    width: 100%;
+    background-color: var(--lightgray);
+}
+
+/* ---------- */
+
+.about-me {
+    color: var(--lightgray);
+    padding: 50px;
+}
+
+.about-me hr {
+    margin-bottom: 10px;
+    border:1px solid var(--lightgray);
+}
+
+.lightgray-container ul, details ul {
+    margin: 20px 30px;
+    list-style-type: none;
+}
+
+.lightgray-container li, details li {
+    margin-top: 5px;
+}
+
+.lightgray-container h2, details h3 {
+    margin: 0 20px;
+}
+
+/* display grid per als icones de la informació del 'aside' */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px;
+}
+
+.grid-item {
+    height: 50px;
+    padding: 20px 0;
+    vertical-align: middle;
+}
+
+.skills i {
+    width: 18px;
+    margin-right: 5px;
+}
+
+/* ----------HEADER---------- */
+
+header {
+    position: fixed;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px;
+    color: var(--white);
+    background-color: var(--blue);
+    z-index: 10;
+}
+
+/* estil per a quan passem el cursor per sobre del elements del header s'il·luminin */
+header > div:hover {
+    text-shadow: 0 0 2px var(--white);
+}
+
+/* ----------MAIN---------- */
+
+main {
+    width: 75%;
+    margin-top: 55px;
+    padding: 30px;
+}
+
+main hr {
+    margin: 20px 0;
+    border: 1px solid var(--blue);
+}
+
+summary {
+    font-size: 1.3em;
+    color: var(--blue);
+}
+
+summary:hover, header > div:hover {
+    cursor: pointer;
+}
+
+/* a la llista del summary he aplicat un estil personalitzat */
+details ul {
+    list-style-type: '- ';
+}
+
+/* transició del 'details' */
+details
+{
+    transition: height 1s ease;
+}
+
+/* quan el 'details' no está obert, tindrà aquest tamany */
+details:not([open])
+{
+    height: 35px;
+}
+
+/* i quan es obri es farà mes gran verticalment i progresivament amb els paràmetres asignats a la transició */
+details[open]
+{
+    height: 220px;
+    overflow: hidden;
+}
+
+.education-item span {
+    display: block;
+}
+
+/* al primer 'span', el titol en aquest cas, de cada bloc d'educació he aplicat un color diferent i mes gruixut */
+.education-item span:first-child {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.skill-item, .education-item, summary {
+    margin: 10px 20px;
+}
+
+.skill-name {
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.skill-name div:last-child {
+    font-style: italic;
+}
+
+/* paràmetres de la barra d'habilitats, un 'div' buit amb un altre 'div' dins seu on té una animació d'emplenament segons el percentatge adjudicat */
+.skill-bar { 
+    background-color: var(--gray);
+    height: 10px;
+    margin: 10px 0;
+}
+
+.skill-bar-filled {
+    width: 0;
+    height: 100%;
+    background-color: var(--blue);
+    animation: skillBarAnimation 3s ease 0s 1;
+    animation-fill-mode: forwards;
+}
+
+/* animació per a la barra d'habilitats */
+@keyframes skillBarAnimation { 
+    0% {width: 0%;}
+}
+
+/* cada barra te un percentatge diferent, així que estic asignat-los mitjançant el numeral child per estalviar-me fer classes diferents */
+.professional-skills .skill-item:nth-child(2) .skill-bar-filled {
+    width: 90%;
+}
+
+.professional-skills .skill-item:nth-child(3) .skill-bar-filled {
+    width: 70%;
+}
+
+.professional-skills .skill-item:nth-child(4) .skill-bar-filled {
+    width: 100%;
+}
+
+.my-time {
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+/* la barra del meu temps tindrà unes mesures i una animació */
+.my-time-bar {
+    width: 100px;
+    margin-top: 10px;
+    border: 1px solid var(--lightgray);
+    animation: myTimeBarAnimation 3s ease 0s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myTimeBarAnimation {
+    0% {height: 0;}
+    100% {height: 160px;}
+} 
+
+/* cada classe es un color a la barra, amb el seu tamany i color */
+.forecasting {
+    background-color: #008BFF;
+    height: 35%;
+}
+
+.reading {
+    background-color: #2ca0ff;
+    height: 20%;
+}
+
+.marketResearch {
+    background-color: #52b0ff;
+    height: 15%;
+}
+
+.familyAndFriends {
+    background-color: #72c0ff;
+    height: 14%;
+}
+
+.coldCalling {
+    background-color: #8acaff;
+    height: 10%;
+}
+
+.seminars {
+    background-color: #c4e4ff;
+    height: 6%;
+}
+
+/* el recuadre al costat de cada linea de la llegenda */
+.color-legend {
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--gray);
+}
+
+.my-time-legend ul {
+    list-style-type: none;
+}
+
+.my-time-legend li {
+    margin: 10px;
+}
+
+.my-time-legend div {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* ----------FOOTER----------- */
+
+footer {
+    justify-content: space-evenly;
+    padding: 20px;
+    color: var(--white);
+    background-color: var(--blue);
+}

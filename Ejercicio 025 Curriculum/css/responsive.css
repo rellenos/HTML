@@ -1,0 +1,86 @@
+/* quan la pantalla del dispositiou sigui menor que 768 pixels, s'aplicaran aquests nous paràmetres */
+@media only screen and (max-width: 768px) {
+
+    /* farem els titols mes petits */
+    h1 {
+        font-size: 3rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    h1, h2, h3, .about-me:none, .grid-item {
+        text-align: center;
+    }
+
+    /* els items del header els posarem en block */
+    header {
+        align-items: start;
+        padding: 5px 20px;
+    }
+    
+    header > div {
+        font-size: .75em;
+        margin: 5px 0;
+    }
+
+    /* la distribució general del contingut estarà ara en columna, en lloc de en fila */
+    .row-container, header {
+        flex-direction: column;
+    }
+
+    /* adaptació de les caixes decoratives del 'aside' */
+    .rotated {
+        width: 350px;
+        height: 350px;
+    }
+
+    .gray {
+        top: 220px;
+    }
+
+    .gray-container {
+        padding-top: 180px;
+    }
+    
+    .about-me {
+        margin: 100px 0 0;
+        padding: 0 50px 0;
+    }
+
+    /* justificació al centre d'alguns titols i textos */
+    .languages > div, .skills > div {
+        justify-content: center;
+    }
+
+    .skills ul {
+        padding-left: 50px;
+    }
+
+    aside img {
+        top: 60px;
+    }
+
+    aside {
+        margin: 70px 0 0;
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    body {
+        background-size: auto;
+    }
+
+    .my-time-legend li {
+        font-size: .8em;
+    }
+}
