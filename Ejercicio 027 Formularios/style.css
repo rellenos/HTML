@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    font-family: verdana;
+    color: #ddd;
+    list-style-type: none;
+}
+
+body {
+    background-color: #333;
+}
+
+header, .title {
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+label, #submit, #reset {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    width: 350px;
+    height: 250px;
+    margin: 30px;
+    border: 1px solid #666;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #222;
+}
+
+.title, .example {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    height: 20%;
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-shadow:
+        3px 3px 0 #222,
+        -1px -1px 0 #222,  
+        1px -1px 0 #222,
+        -1px 1px 0 #222,
+        1px 1px 0 #222;
+    border-bottom: 1px solid #666;
+}
+
+.example {
+    flex-direction: column;
+    height: 80%;
+}
+
+span {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+input {
+    color: #111;
+    margin: 10px;
+}
+
+#button {
+    width: 100px;
+    height: 30px;
+    color: #111;
+    cursor: pointer;
+}
+
+#color {
+    width: 100px;
+    height: 30px;
+}
+
+#file {
+    color: #ddd;
+}
+
+#image {
+    filter: invert();
+}
+
+fieldset {
+    width: 280px;
+    height: 70px;
+}
+
+form {
+    text-align: center;
+}

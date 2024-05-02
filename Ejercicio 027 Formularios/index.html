@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TIPOS DE INPUTS</h1>
+        <hr>
+    </header>
+    <main>
+        <div class="box">
+            <div class="title">
+                button
+            </div>
+            <div class="example">
+                <span>No pulsar el botón</span>
+                <input type="button" value="Botón" id="button">
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                checkbox
+            </div>
+            <div class="example">
+                <span>Selecciona tu fruta favorita:</span>
+                <ul>
+                    <li><input type="checkbox" id="checkbox1"><label for="checkbox1">Fresas</label></li>
+                    <li><input type="checkbox" id="checkbox2"><label for="checkbox2">Mandarinas</label></li>
+                    <li><input type="checkbox" id="checkbox3"><label for="checkbox3">Plátanos</label></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                color
+            </div>
+            <div class="example">
+                <span>Selecciona un color:</span>
+                <input type="color" id="color">
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                date
+            </div>
+            <div class="example">
+                <span>Selecciona una fecha:</span>
+                <input type="date" id="date">
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                datetime-local
+            </div>
+            <div class="example">
+                <span>Selecciona una fecha y hora:</span>
+                <input type="datetime-local" id="datetime-local">
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                month
+            </div>
+            <div class="example">
+                <span>Selecciona un mes:</span>
+                <input type="month" id="month">
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                email
+            </div>
+            <div class="example">
+                <span>Introduce tu correo electrónico:</span>
+                <input type="email" id="email" placeholder="ejemplo@dominio.com">
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                file
+            </div>
+            <div class="example">
+                <span>Carga un archivo:</span>
+                <input type="file" id="file">
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                hidden
+            </div>
+            <div class="example">
+                <span>Aqui hay un input hidden</span>
+                <input type="hidden" name="custId" value="3487">
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                image
+            </div>
+            <div class="example">
+                <span>Una imagen como botón de enviar:</span>
+                <input type="image" src="./images/2952643-200.png" alt="Enviar" width="30px" height="30px" id="image">
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                number
+            </div>
+            <div class="example">
+                <span>Introduce un numero par menor de 10:</span>
+                <input type="number" id="number" min="0" max="10" step="2">
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                password
+            </div>
+            <div class="example">
+                <span>Introduce una contraseña de entre 4 y 6 carácteres, que incluya al menos un numero entre el 5 y el 8 y al menos una letra entre la C y la G:</span>
+                <input type="password" placeholder="Contraseña" minlength="4" pattern="[5-8c-g]{4-6}">
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                radio
+            </div>
+            <div class="example">
+                <fieldset>
+                    <legend>Selecciona tu edad:</legend>
+                    <input type="radio" id="radio1" name="age"><label for="radio1"><18</label>
+                    <input type="radio" id="radio2" name="age"><label for="radio2">18-30</label>
+                    <input type="radio" id="radio3" name="age"><label for="radio3">>30</label></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Selecciona un color favorito:</legend>
+                    <input type="radio" id="radio4" name="colors"><label for="radio4">Verde</label>
+                    <input type="radio" id="radio5" name="colors"><label for="radio5">Rojo</label>
+                    <input type="radio" id="radio6" name="colors"><label for="radio6">Azul</label></label>
+                </fieldset>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                range
+            </div>
+            <div class="example">
+                <span>Selecciona un valor entre el 0 y 50:</span>
+                <label for="range">0<input type="range" name="range" min="0" max="50">50</label>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                reset
+            </div>
+            <div class="example">
+                <span>Botón que reinicia los campos</span>
+                <form>
+                    <input type="text" placeholder="Usuario">
+                    <input type="password" placeholder="Contraseña">
+                    <div>
+                        <input type="submit" value="Enviar" id="submit">
+                        <input type="reset" value="Reset" id="reset">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                search
+            </div>
+            <div class="example">
+                <span>Input de búsqueda</span>
+                <input type="search" placeholder="Buscar...">
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                submit
+            </div>
+            <div class="example">
+                <span>Botón para enviar la información</span>
+                <form action="https://www.google.com/?hl=es" target="_blank">
+                    <input type="submit" value="Google" id="submit">
+                </form>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                tel
+            </div>
+            <div class="example">
+                <span>Introduce tu número de teléfono:</span>
+                <input type="tel" placeholder="123 456 789" pattern="[0-9]{9}">
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                text
+            </div>
+            <div class="example">
+                <span>Introduce cualquier texto:</span>
+                <input type="text" placeholder=".𖥔 ݁ ˖✧˖°.✶₊ ⊹ ⋆˚☆˖°.𖥔 ݁ ˖✧˖">
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                time
+            </div>
+            <div class="example">
+                <span>Introduce una hora y minutos:</span>
+                <input type="time">
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                url
+            </div>
+            <div class="example">
+                <span>Introduce un link:</span>
+                <form action="#" target="_blank">
+                    <input type="url" placeholder="https://www.google.es">
+                </form>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                week
+            </div>
+            <div class="example">
+                <span>Introduce una semana:</span>
+                <input type="week">
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>
