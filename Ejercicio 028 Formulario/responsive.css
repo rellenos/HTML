@@ -1,0 +1,58 @@
+@media only screen and (max-width: 768px) {
+    /* fieldset {
+        width: 100%;
+    } */
+
+    h2 {
+        font-size: 1em;
+    }
+
+    fieldset {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    fieldset, hr {
+        margin: 10px 0;
+    }
+
+    input {
+        /* font-size: .7em; */
+    }
+
+    .formulario {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    form {
+        flex-direction: column;
+        /* align-content: normal; */
+        display: flex;
+        align-items: center;
+    }
+
+    .name, .surname1, .surname2, .dni, .sex, .date, .province, .cp, .tel, .occupation, .mail, .meeted, fieldset {
+        width: 90%;
+    }
+
+    .declaracion {
+        margin: 10px 0;
+    }
+
+    .align-end {
+        text-align: center;
+    }
+
+    .width100 {
+        width: 90%;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

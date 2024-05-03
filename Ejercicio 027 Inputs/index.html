@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios</title>
+    <title>Inputs</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -133,13 +133,13 @@
                     <legend>Selecciona tu edad:</legend>
                     <input type="radio" id="radio1" name="age"><label for="radio1"><18</label>
                     <input type="radio" id="radio2" name="age"><label for="radio2">18-30</label>
-                    <input type="radio" id="radio3" name="age"><label for="radio3">>30</label></label>
+                    <input type="radio" id="radio3" name="age"><label for="radio3">>30</label>
                 </fieldset>
                 <fieldset>
                     <legend>Selecciona un color favorito:</legend>
                     <input type="radio" id="radio4" name="colors"><label for="radio4">Verde</label>
                     <input type="radio" id="radio5" name="colors"><label for="radio5">Rojo</label>
-                    <input type="radio" id="radio6" name="colors"><label for="radio6">Azul</label></label>
+                    <input type="radio" id="radio6" name="colors"><label for="radio6">Azul</label>
                 </fieldset>
             </div>
         </div>
@@ -235,7 +235,43 @@
                 <input type="week">
             </div>
         </div>
-        
+        <div class="box">
+            <div class="title">
+                select
+            </div>
+            <div class="example">
+                <span>Selecciona una opción:</span>
+                <select name="sitLaboral" id="sitLaboral">
+                    <option value="Estudiando">Estudiando</option>
+                    <option value="Desocupado">Desocupado/a</option>
+                    <option value="Activo">Activo/a</option>
+                    <option value="En el paro">En el paro</option>
+                    <option value="Jubilado">Jubilado/a</option>
+                </select>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                datalist
+            </div>
+            <div class="example">
+                <span>Selecciona un sabor favorito:</span>
+                <input list="saborHelado">
+                <datalist id="saborHelado">
+                    <option value="Chocolate"></option>
+                    <option value="Fresa"></option>
+                    <option value="Vainilla"></option>
+                    <option value="Limon"></option>
+                    <option value="Menta-chocolate"></option>
+                    <option value="Pistacho"></option>
+                    <option value="Happy-hippo"></option>
+                    <option value="Málaga"></option>
+                    <option value="Pitufo"></option>
+                    <option value="Turrón"></option>
+                    <option value="Coco"></option>
+                </datalist>
+            </div>
+        </div>
     </main>
 </body>
 </html>

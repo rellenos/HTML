@@ -67,7 +67,7 @@ span {
     padding: 10px;
 }
 
-input {
+input, select, option {
     color: #111;
     margin: 10px;
 }
