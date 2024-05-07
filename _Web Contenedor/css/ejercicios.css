@@ -1,0 +1,56 @@
+section{
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: start;
+}
+
+details {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid var(--lightgray);
+    border-radius: 10px;
+    transition: height 1s ease;
+    box-shadow: 0 0 10px var(--shadow);
+}
+
+summary {
+    width: 100%;
+}
+
+details:not([open]) {
+    height: 65px;
+}
+
+details[open] {
+    height: 200px;
+    overflow: hidden;
+}
+
+details:hover {
+    cursor: pointer;
+}
+
+details > a {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    transition: opacity 1s ease;
+}
+
+details:not([open]) > a {
+    opacity: 0;
+}
+
+details[open] > a {
+    opacity: 1;
+}
+
+details a:hover {
+    text-decoration: underline;
+}

@@ -207,14 +207,12 @@ details
 }
 
 /* quan el 'details' no está obert, tindrà aquest tamany */
-details:not([open])
-{
+details:not([open]) {
     height: 35px;
 }
 
 /* i quan es obri es farà mes gran verticalment i progresivament amb els paràmetres asignats a la transició */
-details[open]
-{
+details[open] {
     height: 220px;
     overflow: hidden;
 }

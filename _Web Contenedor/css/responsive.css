@@ -1,0 +1,26 @@
+@media only screen and (max-width: 768px) {
+    main {
+        padding: 0 10px;
+    }
+
+    header nav, .terms img {
+        display: none;
+    }
+
+    .footerBottom {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px;
+    }
+
+    footer ul {
+        padding: 0;
+    }
+
+    footer nav {
+        margin-top: 20px;
+    }
+}
