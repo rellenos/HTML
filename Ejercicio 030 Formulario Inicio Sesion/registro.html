@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div variable="../snippets/header030.html"></div>
+    <main>
+        <form action="">
+            <h2>Regístrate</h2>
+            <div class="directionColumn alignCenter m-10 w-100">
+                <fieldset class="w-100 m-10">
+                    <legend>Usuario</legend>
+                    <input type="text" id="user" class="w-100" placeholder="Usuario" minlength="6" required tabindex="1">
+                </fieldset>
+                <fieldset class="w-100 m-10">
+                    <legend>Correo</legend>
+                    <input type="text" id="email" class="w-100" placeholder="Correo" required tabindex="2">
+                </fieldset>
+                <fieldset class="w-100 m-10">
+                    <legend>Repite el correo</legend>
+                    <input type="text" id="email" class="w-100" placeholder="Repite el correo" required tabindex="3">
+                </fieldset>
+                <fieldset class="w-100 m-10">
+                    <legend>Contraseña</legend>
+                    <input type="password" id="password" class="w-100" placeholder="Contraseña" minlength="8" required tabindex="4">
+                </fieldset>
+                <fieldset class="w-100 m-10">
+                    <legend>Repite la contraseña</legend>
+                    <input type="password" id="password" class="w-100" placeholder="Repite la contraseña" minlength="8" required tabindex="4">
+                </fieldset>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox1" class="m-10" required><label for="checkbox1">Acepto los <a href="#">términos y condiciones</a></label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox2" class="m-10"><label for="checkbox2">Deseo recibir avisos por correo electónico</label>
+            </div>
+            <input type="submit" value="Registrarse" class="w-100">
+        </form>
+    </main>
+
+    <div variable="../snippets/footer030.html"></div>
+
+
+    <script>
+        function includeHTML() {
+          var z, i, elmnt, file, xhttp;
+          /*loop through a collection of all HTML elements:*/
+          z = document.getElementsByTagName("*");
+          for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain attribute:*/
+            file = elmnt.getAttribute("variable");
+            if (file) {
+              /*make an HTTP request using the attribute value as the file name:*/
+              xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                  if (this.status == 200) {
+                    elmnt.innerHTML = this.responseText;
+                  }
+                  if (this.status == 404) {
+                    elmnt.innerHTML = "Page not found.";
+                  }
+                  /*remove the attribute, and call this function once more:*/
+                  elmnt.removeAttribute("variable");
+                  includeHTML();
+                }
+              };
+              xhttp.open("GET", file, true);
+              xhttp.send();
+              /*exit the function:*/
+              return;
+            }
+          }
+        }
+    </script>
+    <script>
+        includeHTML()
+    </script>
+</body>
+</html>
