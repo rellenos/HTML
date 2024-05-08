@@ -2,6 +2,10 @@ h1 {
     text-align: center;
 }
 
-article p {
+section {
+    margin-bottom: 20px;
+}
+
+section p {
     text-align: justify;
 }

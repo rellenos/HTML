@@ -23,4 +23,8 @@
     footer nav {
         margin-top: 20px;
     }
+
+    .socialMedia {
+        border-bottom: none;
+    }
 }
