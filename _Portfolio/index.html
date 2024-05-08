@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <style>body {background-color: #020617;}</style>
+    <!-- <style>body {background-color: #020617;}</style> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <script type="text/javascript" src="./functions.js"></script>
-    <link rel="stylesheet" href="./css/index.css">
     <div variable="./snippets/import.html"></div>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <div variable="./snippets/header.html"></div>
-    <main>
-        <h1 class="m-20">Bienvenidos a mi portfolio</h1>
-        <div variable="./snippets/inicio.html"></div>
-    </main>
+    <div class="desktop">
+        <div variable="./snippets/header.html"></div>
+        <main>
+            <h1 class="m-20">Bienvenidos a mi portfolio</h1>
+            <div variable="./snippets/inicio.html"></div>
+        </main>
+        <div variable="./snippets/footer.html"></div>
+    </div>
+    <!-- <div class="mobile">
+        <div variable="./snippets/header.html"></div>
+        <main>
+            <h1 class="m-20">Bienvenidos a mi portfolio</h1>
+            <div variable="./snippets/inicio.html"></div>
+            <h1 class="blueTitle">/Sobre mi</h1>
+            <div variable="./snippets/sobremi.html"></div>
+            <h1 class="blueTitle">/Ejercicios</h1>
+            <div variable="./snippets/ejercicios.html"></div>
+            <h1 class="blueTitle">/Contacto</h1>
+            <div variable="./snippets/contacto.html"></div>
+        </main>
     <div variable="./snippets/footer.html"></div>
+    </div> -->
 </body>
 <script>includeHTML()</script>
 </html>

@@ -1,3 +1,8 @@
+/* body {
+    opacity: 1;
+    transition: opacity 2s;
+} */
+
 section{
     flex-direction: column;
     align-items: center;
