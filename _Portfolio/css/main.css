@@ -42,6 +42,8 @@
     box-shadow: 0 0 3px 0 var(--blue);
 }
 
+/* ----------GENERALES---------- */
+
 header, main, footer, header nav, header ul, body {
     display: flex;
 }
@@ -70,7 +72,6 @@ body::-webkit-scrollbar {
     background-color: var(--shadow);
 }
 
-  
 body::-webkit-scrollbar-thumb {
     background: #453347;
     border-radius: 20px;
@@ -79,6 +80,10 @@ body::-webkit-scrollbar-thumb {
 
 ul {
     list-style-type: none;
+}
+
+section {
+    margin-bottom: 20px;
 }
 
 /* ----------HEADER---------- */
@@ -94,9 +99,9 @@ header {
 header nav {
     width: 100%;
     padding: 10px;
-    border: 2px solid #2A1F2B;
+    border: 2px solid #1A1628;
     border-radius: 50px;
-    background-color: #11182780;
+    background-color: #02061750;
     backdrop-filter: blur(10px);
 }
 
