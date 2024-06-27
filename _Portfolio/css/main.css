@@ -6,7 +6,26 @@
     --white: #fff;
     --blue: #04c0fe;
     --font: #D1D5DB;
+    --bg: #020617;
 }
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+html {
+    animation: .5s ease-out 0s 1 opacity;
+}
+
+/* html {
+    transition: opacity 2s;
+    opacity: 1;
+} */
 
 * {
     box-sizing: border-box;
@@ -55,7 +74,7 @@ html, body {
 main {
     flex-grow: 1;
     flex-direction: column;
-    padding: 5% 25% 0;
+    padding: 0 25%;
     /* background-image:
     linear-gradient(#02061778 1px, transparent 1px),
     linear-gradient(to right, #02061700 19px, #02061778 1px);
@@ -80,10 +99,21 @@ body::-webkit-scrollbar-thumb {
 
 ul {
     list-style-type: none;
+    margin-bottom: 0;
+
 }
 
 section {
     margin-bottom: 20px;
+}
+
+h1 {
+    padding: 5% 25% 0;
+}
+
+a {
+    color: var(--font);
+    text-decoration: none;
 }
 
 /* ----------HEADER---------- */

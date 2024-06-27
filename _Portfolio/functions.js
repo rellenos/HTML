@@ -28,4 +28,15 @@ function includeHTML() {
       return;
     }
   }
+  changePath();
+}
+
+function changePath() {
+  const $ = (id) => document.getElementById(id);
+  if (location.pathname != "/_Portfolio/index.html") {
+    $("sobremi").href = "../index.html";
+    $("ejercicios").href = "../html/ejercicios.html";
+    $("contacto").href = "../html/contacto.html";
+    $("iconFooter").src = "../img/favicon.png"
+  }
 }
